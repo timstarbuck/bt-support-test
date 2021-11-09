@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 
 const DonationPage = () => {
@@ -117,7 +117,7 @@ const DonationPage = () => {
                                             <span className="internal-payment">
                                                 <span className="payment-type-option selected payment-option-1" style={{width: "100%"}}>
                                                     <input type="radio" name="responsive_payment_typepay_typeradio" id="responsive_payment_typepay_typeradiocredit" value="credit" checked="checked" />
-                                                    <label for="responsive_payment_typepay_typeradiocredit"><a href="javascript:void(0);" className="payment-type-label">Credit Card</a></label>
+                                                    <label for="responsive_payment_typepay_typeradiocredit"><a href="#" className="payment-type-label">Credit Card</a></label>
                                                 </span>
                                             </span>
                                             </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useLocation } from 'react-router';
 import queryString from 'query-string';
 
@@ -18,7 +18,7 @@ const ThankYouPage = () => {
                             <p>You will be emailed a receipt.</p>
                             <div align="center">
                                 <div style={{padding: "56.25% 0 0 0", position: "relative"}}>
-                                    <iframe src="https://player.vimeo.com/video/354878366?autoplay=1" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}} frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+                                    <iframe title="Video" src="https://player.vimeo.com/video/354878366?autoplay=1" style={{position: "absolute", top: "0", left: "0", width: "100%", height: "100%"}} frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
                                     </iframe>
                                 </div>
                                 <script src="https://player.vimeo.com/api/player.js"></script>
