@@ -1,0 +1,3387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>
+      Thank You. You're not just saving one child. - Boys Town
+    </title>
+    <style type="text/css"><!--
+      * {
+        box-sizing: border-box;
+      }
+      .clear { clear:both; float:left; }
+      body,
+      html {
+          padding: 0;
+          margin: 0;
+          border: none;
+          font-family: 'Source Sans Pro', sans-serif;
+      }
+      /* HIDING THE EMAIL OPT IN */
+      
+      div#donor_email_opt_in_Row {display:none;}
+      
+      .clearfix:after {
+          content: " ";
+          visibility: hidden;
+          display: block;
+          height: 0;
+          clear: both;
+      }
+      
+      .ffbh-container {
+          width: 80%;
+          max-width: 1080px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+      }
+      .mobile .ffbh-container { width: 98%; }
+      
+      #ffbh-header #ffbh-logo {
+          float: left;
+      }
+      
+      #ffbh-header h1 {
+          float: right;
+          float: right;
+      }
+      
+      #ffbh-header {
+          border-bottom: solid 7px #005581;
+          padding: 10px;
+        -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      }
+      
+      #ffbh-header h1 {
+          font-weight: bold;
+          margin-right: 20px;
+          margin-top: 32px;
+          color: #000;
+      }
+      
+      /****** User is Logged Out *******/
+        .ffbh-header-container {
+      
+          width: 82.5%;
+          max-width: 82.5%;
+          margin-left: 0;
+          margin-right: auto;
+          display: block;
+          float:left;
+          margin-top:1.9em;
+      
+      }
+      
+      
+        #give-online-tab { float:left; margin: 0 auto 0 25% }
+        @media screen and (min-width:1025px) and (max-width:1366px) {
+          .ffbh-header-container { max-width: 69%; width: 69%; margin-top: 2em; }
+        }
+          @media screen and (min-width:768px) and (max-width:1024px) {
+          .ffbh-header-container { max-width: 68%; width: 68%; margin-top:  2em; }
+        }
+        @media screen and (max-width:767px) {
+          #ffbh-header { padding: .5em 0; }
+          #ffbh-header #ffbh-logo { max-width: 100%;}
+          .ffbh-header-container { max-width: 100%; width: 100%; margin-top: 2.2em; }
+            #give-online-tab { margin: 0 auto; max-width: 85%; min-width: 85%; width: 85%; float:none; }
+          #donate { text-align: center; min-width: 100%; width: 100%; max-width: 100%;}
+          .donate-tabs .other-tabs {float: none; clear: both; margin: .2em auto;border: 0px; }
+      
+        }
+      
+      #ffbh-footer .col {
+          width: 33.33%;
+          float: left;
+          color: #fff;
+          padding: 10px;
+      }
+      
+      #ffbh-footer .col {
+          font-size: 16px;
+          line-height: 26px;
+      }
+      
+      #ffbh-footer .col a {
+          color: #fff;
+      }
+      
+      #ffbh-footer .col-1 a {
+          display: block;
+          font-size: 16px;
+          line-height: 1.3em;
+          margin-bottom: 4px;
+      }
+      
+      #ffbh-footer {
+          padding: 25px 0;
+      background-color: #635e58; /* Old browsers */
+      background-image: -moz-linear-gradient(top,  #635e58 0%, #46423c 100%); /* FF3.6-15 */
+      background-image: -webkit-linear-gradient(top,  #635e58 0%,#46423c 100%); /* Chrome10-25,Safari5.1-6 */
+      background-image: linear-gradient(to bottom,  #635e58 0%,#46423c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#635e58', endColorstr='#46423c',GradientType=0 ); /* IE6-9 */
+        color: #fff;
+      
+      }
+      
+      #ffbh-footer .col h3 {
+          font-weight: bold;
+          margin-top: 0;
+          margin-bottom: 12px;
+      }
+      
+      #ffbh-footer .col p {
+          margin: 0;
+      }
+        #ffbh-footer a:link, #ffbh-footer a:hover, #ffbh-footer a:visited { 
+        color: #fff; 
+          text-decoration:underline;
+          
+        }
+      
+      #ffbh-content .ffbh-container {
+          padding: 2em 1em;
+      }
+        
+      #ffbh-content #ffbh-footer .ffbh-container { padding-top: 0; padding-bottom:0px; }
+      #ffbh-content {
+          font-size: 16px;
+          /** line-height: 1.3em; **/
+      }
+      
+      #ffbh-footer .col-3 {
+          padding: 0;
+      }
+      
+      #ffbh-footer .col-3 img {
+          max-width: 100%;
+          height: auto;
+      }
+      
+      #ffbh-footer .col {
+          padding-top: 38px;
+      }
+      
+      #ffbh-footer .col-1 {
+          padding-top: 0;
+      }
+      
+      #ffbh-footer .col-2,
+      #ffbh-footer .col-2 p {
+          font-size: 13px;
+          line-height: 23px;
+      }
+      
+      #ffbh-footer .col-1 {
+          padding-top: 0;
+          padding: 0;
+          width: 25%;
+      }
+      
+      #ffbh-footer .col-2 {
+          padding-left: 0;
+          padding-right: 0;
+          width: 60%;
+          text-align: left;
+          margin-left: 3%;
+          padding-top: 38px;
+          padding-bottom: 40px;
+          border-left: solid 1px rgba(255, 255, 255, 0.33);
+          padding-left: 40px;
+      }
+      
+      #ffbh-footer .col-3 {
+          padding-left: 0;
+          padding-right: 0;
+          margin-right: 0;
+          width: 37%;
+      }
+      
+      #donation-section {
+          float: left;
+          width: 42%;
+          margin-right: 3%;
+          padding: 5%;
+      }
+      
+      #donation-section-img {
+          float: left;
+          width: 45%;
+          margin-left: -44px;
+      }
+      
+      #donation-section-img img {
+          width: 100%;
+          height: auto;
+      }
+      
+      #ffbh-footer .col-3 {
+          display: none;
+      }
+      
+      @media(max-width: 980px) {
+          #donation-section {
+              display: block;
+              float: none;
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 20px;
+              text-align: center;
+              width: auto;
+          }
+          #donation-section-img {
+              display: block;
+              float: none;
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+              width: auto;
+          }
+          #donation-section-img img {}
+          #ffbh-header h1 {
+              float: none;
+              width: 100%;
+              display: block;
+              text-align: center;
+          }
+          #ffbh-header #ffbh-logo {
+              float: none;
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
+          }
+          #ffbh-footer .col {
+              padding-top: 38px;
+              display: block;
+              float: none;
+              width: 100% !important;
+              margin-right: auto !important;
+          }
+          #ffbh-footer .ffbh-container {
+              margin-right: 0;
+              margin-left: auto;
+              margin-right: auto;
+          }
+          #ffbh-footer .col-2 {
+              padding-top: 20px;
+              padding-bottom: 40px;
+              margin-top: 20px;
+              border-top: solid 1px rgba(255, 255, 255, 0.33);
+              padding-left: 0px;
+              margin-left: 0;
+              border-left: none;
+          }
+      }
+      .donate-tabs {margin-top:-30px; margin-bottom:20px; /* hide tabs */ display:none; }
+      .donate-tabs .other-tabs {float:right;}
+      .donate-tabs a,
+      .donate-tabs a:link {font-size:16px; padding:10px 20px; color:#fff; display:inline-block; margin-right:1px; }
+        .donate-tabs a:hover, .donate-tabs a:focus {text-decoration: none;}
+      .tab give {background-color: #fdb91d; color:#fff;}
+      .tab give:hover {background-color:#f2be4f;}
+      .tab alt {background-color: #005b7f; color:#fff; }
+      .tab alt:hover,
+      .tab alt.active {background-color:#BEE3F7; text-decoration:none;}
+      
+      .tab-content {display:none;}
+      .tab-content.active {display:block;}
+        @media screen and (max-width:767px) {
+          .donate-tabs a, .donate-tabs a:link, .donate-tabs a, .donate-tabs a:hover { padding: 10px 16px; text-decoration:none;}
+        }
+        
+      /*============================*/
+      /*      BT Custom Styles      */
+      /*============================*/
+      
+      .form-message-text {clear:both;}
+      
+      .donation-form-content h2 {margin-top: 0; clear: both; /* overides bootstrap 1225 */}
+      
+      button { /** remove border on all buttons **/
+        border: 0 !important;
+        -moz-border: 0 !important;
+        -webkit-border: 0 !important;
+      }
+      
+      /** .mobile div.html-caption-container img {width: 100%; height: auto;} **/
+      img.banner {width: 100%; height: auto;}
+      #ffbh-header #ffbh-logo {
+        max-width: 300px;
+        padding: 1rem 0;
+      }
+      div.responsive {width: inherit;} /** ResponsiveBase.css **/
+      
+      .ffbh-container {
+          width: 80%;
+          max-width: 750px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+      }
+      
+      .mobile div.donation-form-container.responsive {padding: 0;}
+      
+      h2.section-header-container {font-family: "Source Sans Pro",Arial,sans-serif !important;}
+      
+      #ffbh-content .ffbh-container {
+          padding: 0 0 2em 0;
+      }
+      
+      h2.section-header-container {
+          color: rgb(0,85,129);
+          font-weight: bold;
+          text-transform: uppercase;
+      }
+      
+      h2.section-header-container {
+          font-size: 26px;
+      }
+      
+      .form-row-3 .FormLabelText {display: none;}
+      .donation-level-general-ask  {display: none;} /** Section below Your Donation subhead **/
+      
+      div.responsive .form-text label, 
+      div.responsive .form-date label,
+      div.responsive .form-selectlist label {
+        margin-left: 0 !important; /** overides the .2em supplied by BBLO **/
+        font-weight: 700;
+        color: #666;
+      }
+      div.responsive .form-radio-array label /* div.responsive .form-checkbox label */ {
+        color: #666;
+      }
+      div.payment-field-container .internal-payment span.payment-type-option label {
+        margin-bottom: 0px;
+      }
+      label+div.donation-level-user-entered {
+        margin-left: 4px;
+        display: inline-block;
+        margin-top: 0px;
+        position: relative; /*****/
+      }
+      
+      div.payment-field-container span.internal-payment span.payment-type-option {
+        margin-right: 16px !important;
+      }
+      
+      /**** Style Targeting Content Above The Form ****/
+      .donate-text {} /** Wrapper **/
+      .donate-text h2, .donate-text h3, .donate-text h4 {color: #005581;}
+      .donate-text h2, .donate-text h4 {margin-bottom: 2rem;}
+      .donate-text p, .donate-text ol, .donate-text ul {margin-bottom: 18px;}
+      .image-left {float: left; margin: 4px 2rem 1rem 0;}
+      .image-right {float: right; margin: 4px 0 1rem 1.5rem;}
+      
+      /**** CC Form ****/
+      #payment_cc_container, #payment_bank_container {
+        float: left;
+        padding: 10px 20px 20px 20px;
+        background-color: rgb(252, 252, 249);
+        border: 2px solid #439ae4;
+        border-radius: 5px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+      
+      #responsive_payment_typecc_type_row.form-row-5 {margin: 0;}
+      #responsive_payment_typecc_number_row {
+        width: 100%;
+        max-width: 100% !important;
+      }
+      #responsive_payment_typecc_number_row.form-row {
+        margin-top: 0;
+      }
+      div.payment-field-container #responsive_payment_typecc_number_row input {width: 100%;}
+      #payment_typecc_exp_date_row, #responsive_payment_typecc_exp_date_row,
+      #responsive_payment_typecc_cvv_row {
+        width: 49.5%;
+        max-width: 100% !important;
+      }
+      
+      #responsive_payment_typecc_cvv_row {
+        min-width: inherit !important;
+        margin-right: 0 !important;
+      }
+      div.payment-field-container #responsive_payment_typecc_cvv_row input {width: 100%;} /** DonFormResponsive.css **/
+      
+      /*****/
+      
+      .section-header-container {border-top: 0;} /** DOnFOrmResponsive.css **/
+      
+      div.responsive div.form-checkbox label, label.custom-element-checkbox-label {
+          font-weight: normal!important; /** DonFormResponsive.css **/
+          margin-bottom:0;
+      }
+      #donor_email_address_row, #donor_phone_row {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-right: 10px; /*** just to keep it the same width as the others for now **/
+      }
+      select#billing_addr_state {height: 34px;}
+      
+      div.payment-field-container span.payment-type-option a img {padding: 0 30px;}
+      
+      #billing_addr_state_row .form-content select {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        max-width: 100%;
+        width: 100%;
+      }
+      
+      div.responsive .payment-type-element-container .payment-type-selection-container .form-row label,
+      div.responsive .donation-level-container .form-input label,
+      div.responsive .matching-gift-container .form-row label { /** Remove space before some of the buttons and label text **/
+          margin-left: 0;
+      }
+      div.donation-level-container:nth-child(3) {margin-right:0;}
+      
+      div.responsive div.form-checkbox label, label.custom-element-checkbox-label, #payment_bank_container .form-content .radio-array-list label {
+        font-weight: normal!important; /** DonFormResponsive.css **/
+        margin-bottom:0;
+      }
+      div.donation-level-container:nth-child(3) {margin-right:0;}
+      div.responsive div.form-checkbox label, label.custom-element-checkbox-label, #payment_bank_container .form-content .radio-array-list label {
+          font-weight: normal!important; /** DonFormResponsive.css **/
+          margin-bottom:0;
+      }
+      div.payment-field-container span.internal-payment span.payment-type-option {margin:inherit;} /****/
+      div.payment-field-container span.internal-payment span.payment-type-option {
+          margin-right: 16px;
+      }
+      div.payment-field-container span.internal-payment {
+          margin-right: 0; /** DonFormResponsive.css **/
+      }
+      div.payment-field-container span.external-payment {
+          margin-left: -4px;
+      }
+      div.payment-field-container span.external-payment span.payment-type-option {
+          margin-right: 0; /** DonFormResponsive.css **/
+          background-color: #eee; /****/
+      }
+      
+      div.payment-field-container span.external-payment span.payment-type-option label {
+          margin-bottom: 0; /** over Bootstrap **/
+      }
+      
+      #payment_bank_container .form-content legend { /** over Bootstrap **/
+          border-bottom: 0;
+          font-weight: 700;
+          color: #666;
+          margin-bottom: 16px;
+      }
+      #payment_bank_container .form-content li {
+          display: inline-block;
+          margin-right: 3rem;
+      }
+      #responsive_payment_typeach_confirm_row input[type="checkbox"] {
+          margin-top: 4px;
+      }
+      div.responsive #responsive_payment_typeach_confirm_row label {
+          width: 90%;
+      }
+      
+      div.responsive button.step-button {
+          max-width: inherit; /** DonFormResponsive.css **/
+      }
+      div.responsive a.next-step, div.responsive button.next-step, div.responsive button.finish-step {
+          float: inherit; /** ResponsiveBase.css **/
+      }
+      
+      #pstep_finish { /** style for cancel and previouse is not included here **/
+        float: inherit;
+        margin: 0 auto;
+        display: inherit;
+      }
+      
+      #pstep_finish span.fa-lock-color {
+        font-size: 1em !important;
+      }
+      
+      #tribute_honoree_first_name_row, #tribute_honoree_last_name_row,
+      #donor_first_name_row, #donor_last_name_row {  /** Honoree name field only **/
+        max-width: 48.7% !important;
+        width: 100%;
+      }
+      
+      /********* Notify Someone **********/
+      #select_grid_row {display: none !important;}
+      #tribute_notify_recip_city_row {
+          max-width: 98.5% !important;
+          width: 100% !important;
+      }
+      #tribute_notify_recip_state_row, #tribute_notify_recip_zip_row {
+          max-width: 48% !important;
+          width: 100%;
+      }
+      #tribute_notify_recip_state_row select {
+          width: 98%;
+          height: 34px;
+          box-shadow: none;
+      }
+      
+      .terms {
+        line-height: 18px;
+        font-size: 14px;
+      }
+      p.terms {
+        margin-bottom: 10px;
+      }
+      
+      /** .html-caption-container.html-caption-container-5 {
+        display: none;
+      } Disabled For Now **/
+      
+      #ffbh-header .ffbh-container a {
+        width: 300px; /** Set the size of the logo **/
+        display: block;
+      }
+      #ffbh-header .ffbh-container a img {
+        width: 100%;
+      }
+      
+      div.responsive {
+	color: rgb(60,60,60);
+    -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+    font-family: Verdana, Helvetica, Arial, sans-serif; 
+    font-size: 1em;
+	width: 896px;
+	margin: auto;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.resp-debug div.responsive {
+    border: 2px dotted green!important;
+    border-radius: 0!important;
+}
+
+/* Reset */
+div.responsive label {
+    white-space: normal;
+}
+
+div.responsive legend {
+    float: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+div.responsive textarea, 
+div.responsive input,
+div.responsive select,
+div.responsive option {
+    font-family: inherit;
+    font-size: inherit;
+    vertical-align: top;
+}
+
+div.responsive a:visited,
+div.responsive a:link {
+    color: #3596D4;
+}
+
+div.responsive a.btn:link {
+    color: #ffffff;
+}
+
+div.responsive pre, div.custom-wysiwyg-text p {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+/* ******************************************************************************** */
+/*  Shared Page Components                                                          */
+/* ******************************************************************************** */
+
+/* this is needed to prevent the input button from shifting to the right in the mobile view on some of the mobile devices */
+div.responsive input.default-submit-hack {
+    display: block;
+}
+
+div.responsive .input-container ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.responsive a.step-button {
+    display: inline-block;
+    text-decoration: none;
+    zoom: 1;
+}
+
+div.responsive a.step-button,
+div.responsive button.step-button,
+div.responsive input.step-button {
+    background-color: #E3E3E3;
+    border: 1px solid #DBDBDB;
+    cursor: pointer;
+    padding: 10px 7px;
+    min-width: 132px;
+    border-radius: 3px; /*CSS3, the box won't curve in older browsers*/
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    
+    /* background */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#dbdbdb');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#eaeaea', endColorstr='#dbdbdb')";
+    background-image: -ms-linear-gradient(top, #eaeaea, #dbdbdb);
+    background-image: -webkit-linear-gradient(top, #eaeaea, #dbdbdb);
+    background-image: -moz-linear-gradient(top, #eaeaea, #dbdbdb);
+    background-image: -o-linear-gradient(top, #eaeaea, #dbdbdb);
+    background-image: linear-gradient(top, #eaeaea, #dbdbdb);
+    
+    color: #646464;
+    overflow: visible;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.responsive a.step-button:hover,
+div.responsive button.step-button:hover,
+div.responsive input.step-button:hover {
+    /* background */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#eaeaea');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#dbdbdb', endColorstr='#eaeaea')";
+    background-image: -ms-linear-gradient(top, #dbdbdb, #eaeaea);
+    background-image: -webkit-linear-gradient(top, #dbdbdb, #eaeaea);
+    background-image: -moz-linear-gradient(top, #dbdbdb, #eaeaea);
+    background-image: -o-linear-gradient(top, #dbdbdb, #eaeaea);
+    background-image: linear-gradient(top, #dbdbdb, #eaeaea);
+}
+
+div.responsive a.step-button:active,
+div.responsive button.step-button:active {
+    filter: none;
+    background: #a3a3a3;
+    border-color: #a3a3a3;
+    color: #ffffff;
+}
+
+div.responsive button.previous-step,
+div.responsive button.cancel-step {
+    float: left;
+}
+
+div.responsive a.next-step,
+div.responsive button.next-step {
+    border: 1px solid #a7d08e;
+    background-color: #d2e5c5;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2e5c5', endColorstr='#b8d39c');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2e5c5', endColorstr='#b8d39c')";
+    background-image: -ms-linear-gradient(top, #d2e5c5, #b8d39c);
+    background-image: -webkit-linear-gradient(top, #d2e5c5, #b8d39c);
+    background-image: -moz-linear-gradient(top, #d2e5c5, #b8d39c);
+    background-image: -o-linear-gradient(top, #d2e5c5, #b8d39c);
+    background-image: linear-gradient(top, #d2e5c5, #b8d39c);
+    color: #2f6601;
+}
+
+div.responsive a.next-step,
+div.responsive button.next-step,
+div.responsive button.finish-step {
+    float: right;
+}
+
+div.responsive a.next-step:hover,
+div.responsive button.next-step:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8d39c', endColorstr='#d2e5c5');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8d39c', endColorstr='#d2e5c5')";
+    background-image: -ms-linear-gradient(top, #b8d39c, #d2e5c5);
+    background-image: -webkit-linear-gradient(top, #b8d39c, #d2e5c5);
+    background-image: -moz-linear-gradient(top, #b8d39c, #d2e5c5);
+    background-image: -o-linear-gradient(top, #b8d39c, #d2e5c5);
+    background-image: linear-gradient(top, #b8d39c, #d2e5c5);
+}
+
+div.responsive a.next-step:active,
+div.responsive button.next-step:active {
+    background: #649140;
+    border-color: #649140;
+}
+
+div.responsive button.next-step[disabled="disabled"] {
+    background-color: #ebebeb;
+    border: 1px solid #e2e2e2;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#e6e6e6');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#e6e6e6')";
+    background-image: -ms-linear-gradient(top, #efefef, #e6e6e6);
+    background-image: -webkit-linear-gradient(top, #efefef, #e6e6e6);
+    background-image: -moz-linear-gradient(top, #efefef, #e6e6e6);
+    background-image: -o-linear-gradient(top, #efefef, #e6e6e6);
+    background-image: linear-gradient(top, #efefef, #e6e6e6);
+    color: #c7c7c7;
+}
+
+div.responsive a.secondary-step,
+div.responsive button.secondary-step {
+    border: 1px solid #c9d8e2;
+    background-color: #e5eff4;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bbdbf0');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bbdbf0')";
+    background-image: -ms-linear-gradient(top, #ffffff, #bbdbf0);
+    background-image: -webkit-linear-gradient(top, #ffffff, #bbdbf0);
+    background-image: -moz-linear-gradient(top, #ffffff, #bbdbf0);
+    background-image: -o-linear-gradient(top, #ffffff, #bbdbf0);
+    background-image: linear-gradient(top, #ffffff, #bbdbf0);
+    color: #0e7ed1;
+    float: right;
+    margin-right: 20px;
+}
+
+div.responsive button.secondary-step:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbdbf0', endColorstr='#ffffff');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbdbf0', endColorstr='#ffffff')";
+    background-image: -ms-linear-gradient(top, #bbdbf0, #ffffff);
+    background-image: -webkit-linear-gradient(top, #bbdbf0, #ffffff);
+    background-image: -moz-linear-gradient(top, #bbdbf0, #ffffff);
+    background-image: -o-linear-gradient(top, #bbdbf0, #ffffff);
+    background-image: linear-gradient(top, #bbdbf0, #ffffff);
+}
+
+div.responsive button.secondary-step:active {
+    background: #017acb;
+    border-color: #017acb;
+}
+
+div.responsive button.action-button {
+    border: 1px solid #b5cbd9;
+    background-color: #d4e8f3;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bcdbf0');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bcdbf0')";
+    background-image: -ms-linear-gradient(top, #ffffff, #bcdbf0);
+    background-image: -webkit-linear-gradient(top, #ffffff, #bcdbf0);
+    background-image: -moz-linear-gradient(top, #ffffff, #bcdbf0);
+    background-image: -o-linear-gradient(top, #ffffff, #bcdbf0);
+    background-image: linear-gradient(top, #ffffff, #bcdbf0);
+    color: #0275ce;
+}
+
+div.responsive button.cancel-step {
+	overflow:visible;
+    border:0;
+    min-width: inherit;
+    color:#3596D4;
+    filter: inherit;
+    background:transparent;
+    font:inherit;
+    line-height:normal;
+    text-decoration:underline; 
+    cursor:pointer; 
+    -moz-user-select:text; 
+}
+
+div.responsive button.cancel-step:hover,
+div.responsive button.cancel-step:focus,
+div.responsive button.cancel-step:active {
+    color:inherit;
+    filter: inherit;
+    -ms-filter: inherit;
+    background-image: inherit;
+}
+
+div.responsive input[type="text"], 
+div.responsive input[type="number"],
+div.responsive input[type="email"],
+div.responsive input[type="password"],
+div.responsive textarea {
+    border: 1px solid #d9d6cf;
+    padding: 5px 7px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -webkit-box-shadow: inset 3px 3px 3px #f0f0f0;
+    -moz-box-shadow: inset 3px 3px 3px #f0f0f0;
+    box-shadow: inset 3px 3px 3px #f0f0f0;
+}
+
+div.responsive div.form-content {
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+div.responsive .hidden {
+    display: none;
+}
+
+/* *********************************************************** */
+/* ERROR message/indicator related CSS                         */ 
+/* *********************************************************** */
+div.responsive span.field-required {
+    display: inline-block;
+    zoom: 1;
+    height: 9px;
+    width: 9px;
+    background-image: url('../../images/required.png');
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+div.responsive span.header-warning-message {
+    display: inline-block;
+    zoom: 1;
+    height: 16px;
+    width: 16px;
+    background-image: url('../../images/warning.gif');
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+div.responsive span.header-info-message {
+    display: inline-block;
+    zoom: 1;
+    height: 16px;
+    width: 16px;
+    background-image: url('../../images/info.gif');
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+div.responsive div.ErrorMessage {
+  margin-bottom: 4px;
+}
+/* Page level errors */
+div.responsive div.ErrorMessage.page-error {
+    border: 1px solid #B94A49;
+    background-color: #feeaeb;
+    padding: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 886px;
+    margin-top: 4px;
+}
+
+/* Page level error indicator */
+div.responsive div.ErrorMessage.page-error>span.field-error-indicator {
+    height: 23px;
+    width: 18px;
+    background-image: url('../../images/page_error_icon.png');
+    vertical-align: top;
+    background-repeat: no-repeat;
+    display: inline-block;
+    zoom: 1;
+}
+
+/* Page level error text */
+div.responsive div.ErrorMessage.page-error>span.field-error-text {
+    border: 1px solid #e0b1b2;
+    background-color: #FFFFFF;
+    color: #990000;
+    padding: 6px;
+    -moz-border-radius: 0px 3px 3px 0px;
+    -webkit-border-radius: 0px 3px 3px 0px;
+    border-radius: 0px 3px 3px 0px;
+    font-size: 1em;
+    display: inline-block;
+    zoom: 1;
+    width: 840px;
+}
+
+/* Field error text */
+div.responsive span.field-error-text {
+  color: #990000;
+  font-size: 1em;
+
+}
+  
+div.responsive div.form-error {
+    border: 1px solid #B94A49;
+    background-color: #feeaeb;
+    padding: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+/* ********************************************************** */
+/* Media Query Overrides                                      */
+/* ********************************************************** */
+
+/*      Tablet Layout: 768px.
+        Gutters: 24px.
+        Outer margins: 28px.
+        Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .mobile div.responsive {
+        width: 712px;
+    }
+  
+    .resp-debug.mobile  div.responsive{
+      border: 2px dotted blue!important;
+    }
+
+    
+    /* Page level errors */
+    .mobile div.responsive div.ErrorMessage.page-error {
+      width: 702px;
+    }
+    
+    /* Page level error text */
+    .mobile div.responsive div.ErrorMessage.page-error>span.field-error-text {
+        width: 656px;
+    }
+}
+
+
+
+/*      Mobile Layout: 320px.
+        Gutters: 24px.
+        Outer margins: 34px.
+        Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+    
+    .mobile div.responsive {
+        width: 252px;
+    }
+ 
+    .resp-debug.mobile div.responsive {
+        border: 2px dotted red!important;
+    }
+    
+    /* Page level errors */
+    .mobile div.responsive div.ErrorMessage.page-error {
+      width: 242px;
+    }
+    
+    /* Page level error text */
+    .mobile div.responsive div.ErrorMessage.page-error>span.field-error-text {
+        width: 196px;
+    }
+    
+    .mobile div.responsive button.step-button {
+        float: none;
+    }
+    
+    .mobile div.responsive button.secondary-step {
+        margin-right: 0;
+    }
+}
+
+
+
+/*      Wide Mobile Layout: 480px.
+        Gutters: 24px.
+        Outer margins: 22px.
+        Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    .mobile div.responsive {
+        width: 436px;
+    }
+
+    .resp-debug.mobile div.responsive {
+      border: 2px dotted yellow!important;
+    }
+    
+    /* Page level errors */
+    .mobile div.responsive div.ErrorMessage.page-error {
+      width: 426px;
+    }
+    
+    /* Page level error text */
+    .mobile div.responsive div.ErrorMessage.page-error>span.field-error-text {
+        width: 380px;
+    }
+    
+    .mobile div.responsive button.next-step {
+        float: right;
+    }
+}
+
+/*****************************/
+/* Debug and reminder styles */
+/*****************************/
+
+.resp-debug .debug1 div.responsive{
+  border: 1px dashed red!important;
+}
+.resp-debug .debug2 div.responsive{
+  border: 1px dashed green!important;
+}
+.resp-debug .debug3  div.responsive{
+  border: 1px dashed blue!important;
+}
+.resp-debug .debug4  div.responsive{
+  border: 1px dashed orange!important;
+}
+.resp-debug .debug5  div.responsive{
+  border: 1px dashed pink!important;
+}
+
+.resp-debug div.responsive table.todo-remove-table, 
+.resp-debug div.responsive .todo {
+  border: 1px dotted red!important;
+  background-image: url('../../images/burninatingInProgress.png');
+}
+      /****Premium Item Stuff****/
+      div.responsive div.premium-selector-radio-option-row {width: 100%;}
+      div.responsive div.premium-selector-radio-option-description {display: inherit; margin-left: 20px;}
+      div.responsive div.premium-selector-radio-option-description-img-and-text img {
+          float: right;
+          margin: 0 2rem 0 0;
+          display: block;
+      }
+      .premium-selector-radio-container {display: flex;}
+      div.responsive div.premium-selector-radio-option-row.premium-separator {
+          border-top-width: 0;
+      }
+      
+      @media screen and (max-width: 767px) {
+          .premium-selector-radio-container {display: block;}
+          .mobile div.responsive a.premium-selector-more-info-link {display: block;}
+      }
+      @media only screen and (max-width: 767px) and (min-width: 480px) {
+      .mobile div.responsive div.premium-selector-radio-option-description {
+          max-width: 100%;
+      }
+      }
+      
+      
+      @media screen and (max-width: 767px) { 
+      #ffbh-content .ffbh-container { padding: .5em 1em; }
+        .form-content select {width: 100%; margin-bottom: 1rem;}
+        #ffbh-header .ffbh-container a {margin: 0 auto;} /** Center the logo when on mobile **/
+        .mobile div.html-caption-container p img,
+        .donate-text img { /** Full width image on mobile **/
+          width: 100%;
+          height: auto;
+          margin: 1.6rem 0 !important;
+        }
+          .html-caption-container p, .html-caption-container li { /** Increase font size on mobile **/
+              font-size: 18px;
+          }
+         .donate-text h2 {margin-bottom: inherit;}
+      }
+      @media screen and (min-width: 768px) { 
+        .form-content select {width: 45%;}
+      }
+      @media only screen and (max-width: 991px) and (min-width: 768px){
+        .mobile div.responsive {
+            width: inherit;
+        }
+      }
+      
+      /***** Button on Mobile Only *****/
+      .mcButton {display: none;}
+      .mcButton a {
+          background: inherit;
+          background-color: #6c9201;
+          border-radius: 5px;
+          box-shadow: none;
+          border: none;
+          font-size: 20px;
+          text-transform: uppercase;
+          padding: 12px 12px;
+          width: 100%;
+      }
+      @media screen and (max-width: 767px) {
+          .mcButton {display: block;}
+      }
+      
+      /*============================*/
+      /*   Luminate Custom Styles   */
+      /*============================*/
+      *, html, body, form, input, input.AddressBookButtons, input.Advocacy, input.btn, input.btnLg, input.btnMed, input.btnMini, input.btnSm, select, select.Advocacy, textarea, legend, ul, ol, li, option, table, tr, th, th.rfl_infoStatus, td, td.AlertListDescription, td.cstmBack, p, p.cstmBtnText, p.cstmFrame, p.cstmHeading, p.cstmText, p.cstmTitle, p.dividerHeading, p.scrollingText, span.cstmHeading, a, a.btn, a.btn:visited, a.cstmBtnText:hover, a.cstmBtnText:link, a.cstmBtnText:visited, #navList, .AdvocacyInstructions, .AdvocacyNSFix, .BlogHeader, .Button, .Divider, .FieldLabels, .FormBox, .FormBox06, .FormBoxHeader, .Hint, .Instructions, .Instructions, .ListItem0, .ListItem1, .NetscapeFix, .NoteText, .ObjTitle, .PhotoLinks, .Premiums, .ProgressBox, .ProgressBoxCurrent, .SectionHead, .SmallButton, .Smaller, .SmallerC, .TribBtnText1, .Upgrades, .WhatNext, .alphacube_content, .dialog_content, .dialog_title, .Explicit, .fr_register_another, .paraBlueSansSmall, .smallBlack, .smallSans, .smallSansBold, .smallWhiteBoldSans, .smallWhiteSans, .smallestBlackSans {
+          font-family: 'Source Sans Pro', sans-serif;
+      }
+        body, p, li, ol, ul, table, tr, th, td, .Explicit { font-size: 16px; }
+        .Smaller { font-size: 1em; }
+        p.Smaller { margin-bottom:0px; }
+        label { vertical-align:middle;}
+        input[type="checkbox"], input[type="radio"], #responsive_payment_type\.account_type_row .radio-array-list input[type="radio"], input[name="donor_matching_employerradioGroup"] { float: left; max-width: 12px; margin-right: .3em !important; }
+        input[type="checkbox"] { margin-top: .3em; }
+        span.field-required { float: left; margin-right: .3em; }
+        #responsive_payment_typeach_confirm_row input[type="checkbox"] { margin-top: .3em; }
+      div.donation-form-container.responsive {
+          padding: 25px;
+          background: transparent;
+          -moz-border-radius: 0;
+          -webkit-border-radius: 0;
+          border-radius: 0;
+          border: none;
+      }
+      .mobile div.donation-form-container.responsive { padding: .5em; }
+        .custom-field-container fieldset, #donor_matching_employer_Row, #donor_matching_employer_Row .form-content { min-wdith: 100% !important; width: 100% !important; max-width: 100%; }
+        #donor_matching_employersearchname { 
+          min-width: 45%; 
+          /** width: auto; **/
+          width: 98.5%;
+          max-width: 100%; 
+        }
+        #donor_matching_employersearchBtn { 
+          /** margin: .5em 0 0 0 !important; **/
+          margin: 0.8em 0 0 0 !important;   
+        }
+      div.responsive button.action-button,
+      .appArea input[type="submit"],
+      .appArea input[type="reset"] {
+        -moz-border: 1px solid #005581;
+        -webkit-border: 1px solid #005581;
+          border: 1px solid #005581;
+          filter: none;
+          -ms-filter: none;
+          background-image: none;
+          color: #000;
+          padding: 10px 7px;
+          -moz-border-radius: 4px;
+          -webkit-border-radius: 4px;
+          border-radius: 4px;
+        background-color: #eee; /* Old browsers */
+      background-image: -moz-linear-gradient(top,  #eee 0%, #eee 100%); /* FF3.6-15 */
+      background-image: -webkit-linear-gradient(top,  #eee 0%,#eee 100%); /* Chrome10-25,Safari5.1-6 */
+      background-image: linear-gradient(to bottom,  #eee 0%,#eee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eee', endColorstr='#eee',GradientType=0 ); /* IE6-9 */
+      transition-delay: 0s !important;
+      transition-duration: 0ms !important;
+      transition-property: all !important;
+      transition-timing-function: ease !important;
+      -webkit-transition-delay: 0s !important;
+      -webkit-transition-duration: 0ms !important;
+      -webkit- transition-property: all !important;
+      -webkit-transition-timing-function: ease !important;
+      -o-transition-delay: 0s !important;
+      -o-transition-duration: 0ms !important;
+      -o-transition-property: all !important;
+      -o-transition-timing-function: ease !important;
+      -moz-transition-delay: 0s !important;
+      -moz-transition-duration: 0ms !important;
+      -moz-transition-property: all !important;
+      -moz-transition-timing-function: ease !important;
+      -khtml-transition-delay: 0s !important;
+      -khtml-transition-duration: 0ms !important;
+      -khtml-transition-property: all !important;
+      -khtml-transition-timing-function: ease !important;
+      -ms-transition-delay: 0s !important;
+      -ms-transition-duration: 0ms !important;
+      -ms-transition-property: all !important;
+      -ms-transition-timing-function: ease !important;
+      }
+      div.responsive button.action-button:hover, .appArea input[type="submit"]:hover, .appArea input[type="reset"]:hover
+      { text-decoration:none;
+      }
+      div.responsive a.step-button:hover,
+      div.responsive button.step-button:hover,
+      div.responsive input.step-button:hover,
+      .appArea input[type="submit"]:hover,
+      .appArea input[type="reset"]:hover {
+        -moz-border: 1px solid #597801;
+        -webkit-border: 1px solid #597801;
+         border: 1px solid #597801;
+          filter: none;
+          text-decoration: none;
+      background-color: #597801; /* Old browsers */
+      background-image: -moz-linear-gradient(top,  #597801 0%, #597801 100%); /* FF3.6-15 */
+      background-image: -webkit-linear-gradient(top,  #597801 0%,#597801 100%); /* Chrome10-25,Safari5.1-6 */
+      background-image: linear-gradient(to bottom,  #597801 0%,#597801 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#597801', endColorstr='#597801',GradientType=0 ); /* IE6-9 */
+      }
+      
+      div.appArea {
+          width: 100%;
+      }
+      /********** Login Button Top Right **************/
+      .profile-info { float:left; margin-right: 1em; }
+      .pull-right { float:right; }
+      #ShareThis-container { float:right; }
+      #ShareThis-container { margin-top: 0px; }
+      #ShareThis-container h1 { font-size: 16px; font-weight: bold; line-height: 1.2em; }
+      .bb-login {
+           padding-top: 10px;
+           padding-right: 30px;
+      }
+      .bb-login a {
+          color: #c61027;
+          text-transform: uppercase;
+      }
+      
+      .bb-login.pull-right .profile-info button {border-radius: 0 !important; padding: 9px 16px !important;}
+      
+      #f2fSendUserNameForm, #errorContainer {
+          display: none;
+      }
+      
+      .janrain-provider-icon-16{
+          width:20px;
+          height:20px;
+          margin:6px;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+        .modal-content .modal-body { text-align: left; padding: .5em 1em; }
+         .modal-content .modal-header { display:block; }
+        .modal-content .modal-header button.close { color: #a1a1a1; text-shadow: 1px 1px 0px #666; opacity: 1; }
+        .modal-body { padding: 0px; }
+        .modal-body .loginTitle { margin: 1em 0 .5em 0; color: #000; }
+      .janrainModal { z-index: 9999 !important; }
+      .modal-backdrop { z-index: 999 !important; }
+      .janrainShareCountContainer { display:none !important; }
+      #janrainModal { min-height: 180px; min-width: 420px; }
+      @media (max-width:500px) {
+      .bb-login.pull-right {clear: both!important;}
+      #janrainModal { min-height: auto; min-width: auto; max-width: 100%; max-height: 250px; }
+      }
+      .janrainHeader { float:left; margin-right: .3em; margin-top:8px; }
+      #janrainView .janrainHeader { margin-top:0px !important; }
+      #janrainView  #janrainProviderPages { padding-top: 35px !important; }
+      #sharethis-subcontainer { float:right; }
+      .bb-login.pull-right .profile-info button.btn.btn-primary, .bb-login.pull-right .profile-info button, .bb-login.pull-right .profile-info .button.btn-success, #login, #user_type_login_email_button { 
+        color: #000;
+           background-color: #eee; /* Old browsers */
+      background-image: -moz-linear-gradient(top,  #eee 0%, #eee 100%); /* FF3.6-15 */
+      background-image: -webkit-linear-gradient(top,  #eee 0%,#eee 100%); /* Chrome10-25,Safari5.1-6 */
+      background-image: linear-gradient(to bottom,  #eee 0%,#eee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eee', endColorstr='#eee',GradientType=0 ); /* IE6-9 */
+          min-height:32px ;
+          text-shadow:none;
+          border-radius:5px;
+          white-space:normal;
+          font-size:16px;
+        text-decoration:none;
+      background-image: none;
+      -moz-border: 1px solid #005581;
+        -webkit-border: 1px solid #005581;
+          border: 1px solid #005581;
+      filter:none;
+      border-radius: 5px !important;
+      transition-delay: 0s !important;
+      transition-duration: 0ms !important;
+      transition-property: all !important;
+      transition-timing-function: ease !important;
+      -webkit-transition-delay: 0s !important;
+      -webkit-transition-duration: 0ms !important;
+      -webkit- transition-property: all !important;
+      -webkit-transition-timing-function: ease !important;
+      -o-transition-delay: 0s !important;
+      -o-transition-duration: 0ms !important;
+      -o-transition-property: all !important;
+      -o-transition-timing-function: ease !important;
+      -moz-transition-delay: 0s !important;
+      -moz-transition-duration: 0ms !important;
+      -moz-transition-property: all !important;
+      -moz-transition-timing-function: ease !important;
+      -khtml-transition-delay: 0s !important;
+      -khtml-transition-duration: 0ms !important;
+      -khtml-transition-property: all !important;
+      -khtml-transition-timing-function: ease !important;
+      -ms-transition-delay: 0s !important;
+      -ms-transition-duration: 0ms !important;
+      -ms-transition-property: all !important;
+      -ms-transition-timing-function: ease !important;
+      text-decoration:none;
+      padding: 7px 5px !important;
+      text-transform: capitalize;
+      }
+      .bb-login.pull-right .profile-info button.btn.btn-primary:hover, .bb-login.pull-right .profile-info .button.btn-success:hover, #login:hover, #user_type_login_email_button:hover, input#op.cnclViewCons:hover, #email_interest.save:hover {
+      color: #fff;
+      background-color: #005581; /* Old browsers */
+      background-image: -moz-linear-gradient(top,  #005581 0%, #005581 100%); /* FF3.6-15 */
+      background-image: -webkit-linear-gradient(top,  #005581 0%,#005581 100%); /* Chrome10-25,Safari5.1-6 */
+      background-image: linear-gradient(to bottom,  #005581 0%,#005581 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005581', endColorstr='#005581',GradientType=0 ); /* IE6-9 */
+      -moz-border:1px solid #005581; -webkit-border:1px solid #005581; border:1px solid #005581;
+      border-radius: 5px !important;
+      text-decoration:none;
+      padding: 7px 5px !important;
+      text-decoration:none !important;
+      text-transform: capitalize;
+      }
+        .modal-body #login, .modal-body #user_type_login_email_button, .modal-body #login:hover, .modal-body #user_type_login_email_button:hover { min-height: 55px; padding: 14px 8px !important; }
+      .modal-body #login, .modal-body #user_type_login_email_button { min-width: 50%; margin:0 auto 0 25%; float: none; font-size: 18px; font-weight:600; }
+      #user_type_login_email_button { display:block; }
+      .bb-login.pull-right .profile-info li { list-style-type: none; float:left; margin-right: .8em; }
+      #nav-user li a { text-decoration:none; text-transform: capitalize; }
+      #nav-user li a:hover { text-decoration:underline; }
+      #modal-login-popup { text-align:left; }
+        @media screen and (max-width:767px) {
+          .modal-content { max-width: 92%; margin: .5em auto; }
+          .modal-body #login, .modal-body #user_type_login_email_button { max-width: 90%; margin: 0 auto; }
+          #donor_matching_employersearchname { min-width: 100%; width: auto; max-width: 100%; margin:0;}
+          #login, #user_type_login_email_button { min-width: 98%; margin: .5em auto; }
+        }
+      /* Donation form Custom Styles inserted by Will Hull @Blackbaud */
+      
+      /*===============================
+        Donation Form Custom Styles
+      ===============================*/
+        div.responsive .form-control:focus, div.responsive input:focus, div.responsive select:focus, div.responsive textarea:focus, input#USERNAME:focus, input#Password:focus, input#Email:focus, input#USERNAME_3:focus, input#Email_1:focus, .form-control:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="username"]:focus, texarea:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="number"]:focus, select:focus {  color: #495057; background-color: #fff;-moz-border-color: #80bdff; -webkit-border-color: #80bdff; border-color: #80bdff; outline: 0; -moz-box-shadow: 0 0 0 .2rem rgba(0,123,255,.25); -webkit-box-shadow: 0 0 0 .2rem rgba(0,123,255,.25); box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);}
+        div.responsive input[type="text"], div.responsive input[type="number"], div.responsive input[type="password"], div.responsive textarea {
+          -moz-border-radius: 4px;
+          -webkit-border-radius: 4px;
+          border-radius: 4px;
+          box-shadow: none; /*****/
+          border: 1px solid #ccc; /*****/
+      }
+      
+      .showmethemoney { display: block !important; }
+      
+      /* Donation amount selection buttons */
+      div.donation-level-amount-container, .donation-level-label-container, .btn.btn-primary.btn-donate {
+        padding: 5px 7px;
+        -moz-border: none; /*****/
+        -webkit-border: none; /*****/
+        border: none; /*****/
+        color: #000;
+        background: #eee;
+        transition: all .25s ease-in-out;
+        /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important; */
+        box-shadow: none; /*****/
+        border-radius: 5px;
+        font-size: 20px; /*****/
+        font-weight: 500;
+        padding: 12px 12px; /*****/
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+      }
+      div.donation-level-amount-container:hover, .donation-level-label-container:hover {
+        background-color: #005581;
+        color: #fff;
+        /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important; */
+        border-radius: 5px;
+        box-shadow: none; /*****/
+        border: none; /*****/
+        font-size: 20px; /*****/
+        font-weight: 500;
+        padding: 12px 12px; /*****/
+        cursor: pointer; /*****/
+      }
+      div.donation-level-amount-container.active-donation-level, .donation-level-label-container.active-donation-level {
+        background-color: #005581;
+        color: #fff;
+        /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important; */
+        border-radius: 5px;
+        box-shadow: none; /*****/
+        border: none; /*****/
+        font-size: 20px; /*****/
+        font-weight: 500;
+        padding: 12px 12px; /*****/
+      }
+      
+      div.form-row div.form-content { display:inline-block; }
+      
+      
+      div.responsive span.field-required {
+        vertical-align: baseline;
+      }
+      .donation-level-label-input-container input[type="radio"] {
+        position: relative;
+        left: -9999px;
+      }
+      .donation-level-container:last-child .donation-level-input-container label, .donation-level-container:last-child .donation-level-label-container { display:none; }
+      .form-content fieldset { border: 0px; }
+      #payment_typecc_number_row, #payment_typecc_exp_date_row, #payment_typecc_cvv_row { float: left; max-width: 30%; width: auto; margin-right: 1%; }
+      #call-to-action .button, .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info, .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open .dropdown-toggle.btn-info, div.responsive a.next-step, div.responsive button.next-step, div.responsive a.finish-step, div.responsive button.finish-step, div.responsive a.cancel-step, div.responsive button.cancel-step, div.responsive a.previous-step, div.responsive button.previous-step, div#find_participant div.list-component-body div.list-component-cell-column-donate a, #user_type_login_container .action-button, #another_button, #join_team_button, #personal_page_join_team_button, input#next_step, input#previous_step, input#cancel, #fuw_next, #fuw_cancel, #btn_prev, div#team_find_search_results_container div.list-component-cell-column-join-link a, div.responsive a.next-step, div.responsive button.next-step, div.responsive a.finish-step, div.responsive button.finish-step, div.responsive a.cancel-step, div.responsive button.cancel-step, div.responsive a.previous-step, div.responsive button.previous-step, div#find_participant div.list-component-body div.list-component-cell-column-donate a, div#content button.search-button, .side-bar .donation-link-container .donation-link.indicator-link, .side-bar .donor-wall-link-container .donor-wall-link.indicator-link, .action-button, #ACTION_SUBMIT_SURVEY_RESPONSE, #reset, #ACTION_CANCEL_RESPONSE_SUBMIT, form .Button, #toggle-honor-btn-container .donation-btn-toggle, #toggle-notif-btn-container .donation-btn-toggle, .donation-btn-toggle {
+        color: #000;
+        /* min-height: 55px !important; */
+        text-shadow: none;
+        border-radius: 5px;
+        white-space: normal;
+        font-size: 20px; /*****/
+        text-transform: capitalize; /*****/
+        text-decoration: none;
+        /** margin: 0px !important; remove **/
+        -moz-border: solid 1px #005581;
+        -webkit-border: solid 1px #005581;
+        border: none; /*****/
+        padding: 10px 30px; /*****/
+        filter: none;
+        transition-delay: 0s !important;
+        transition-duration: 0ms !important;
+        transition-property: all !important;
+        transition-timing-function: ease !important;
+        -webkit-transition-delay: 0s !important;
+        -webkit-transition-duration: 0ms !important;
+        -webkit- transition-property: all !important;
+        -webkit-transition-timing-function: ease !important;
+        -o-transition-delay: 0s !important;
+        -o-transition-duration: 0ms !important;
+        -o-transition-property: all !important;
+        -o-transition-timing-function: ease !important;
+        -moz-transition-delay: 0s !important;
+        -moz-transition-duration: 0ms !important;
+        -moz-transition-property: all !important;
+        -moz-transition-timing-function: ease !important;
+        -khtml-transition-delay: 0s !important;
+        -khtml-transition-duration: 0ms !important;
+        -khtml-transition-property: all !important;
+        -khtml-transition-timing-function: ease !important;
+        -ms-transition-delay: 0s !important;
+        -ms-transition-duration: 0ms !important;
+        -ms-transition-property: all !important;
+        -ms-transition-timing-function: ease !important;
+        text-decoration: none;
+        */: ;
+        background-color: #eee;
+        /** background-image: -moz-linear-gradient(top, #eee 0%, #eee 100%);
+        background-image: -webkit-linear-gradient(top, #eee 0%,#eee 100%);
+        background-image: linear-gradient(to bottom, #eee 0%,#eee 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eee', endColorstr='#eee',GradientType=0 ); **/
+        -moz-box-shadow: none; /*****/
+        -webkit-box-shadow: none; /*****/
+        box-shadow: none; /*****/
+      }
+      .donation-btn-toggle, .donation-btn-toggle:hover, .donation-btn-toggle:focus { text-decoration: none; text-align:center; }
+      div.responsive button.action-button { color: #000; }
+      div.responsive button.action-button:hover { color: #fff !important; } 
+      div.responsive button.action-button, div.responsive button.action-button:hover { background-image:none;
+      transition-delay: 0s !important;
+      transition-duration: 0ms !important;
+      transition-property: all !important;
+      transition-timing-function: ease !important;
+      -webkit-transition-delay: 0s !important;
+      -webkit-transition-duration: 0ms !important;
+      -webkit- transition-property: all !important;
+      -webkit-transition-timing-function: ease !important;
+      -o-transition-delay: 0s !important;
+      -o-transition-duration: 0ms !important;
+      -o-transition-property: all !important;
+      -o-transition-timing-function: ease !important;
+      -moz-transition-delay: 0s !important;
+      -moz-transition-duration: 0ms !important;
+      -moz-transition-property: all !important;
+      -moz-transition-timing-function: ease !important;
+      -khtml-transition-delay: 0s !important;
+      -khtml-transition-duration: 0ms !important;
+      -khtml-transition-property: all !important;
+      -khtml-transition-timing-function: ease !important;
+      -ms-transition-delay: 0s !important;
+      -ms-transition-duration: 0ms !important;
+      -ms-transition-property: all !important;
+      -ms-transition-timing-function: ease !important;
+      -moz-border: 1px solid #005581;
+        -webkit-border: 1px solid #005581;
+          border: 1px solid #005581;
+      }
+      .button.btn-primary.btn-block.btn-lg:hover, button.btn-success:hover, a.btn-success:hover, div#content button.search-button:hover, div.responsive a.next-step:hover, div.responsive button.next-step:hover, div.responsive button.cancel-step:hover, div.responsive a.cancel-step:hover, div.responsive button.previous-step:hover, div.responsive a.previous-step:hover, .donation-link:hover, div.responsive a.secondary-step:hover, div.responsive button.secondary-step:hover, div.responsive a.finish-step:hover, div.responsive button.finish-step:hover, div.responsive a.cancel-step:hover, div.responsive button.cancel-step:hover, div.responsive a.previous-step:hover, div.responsive button.previous-ste:hover, div#find_participant div.list-component-body div.list-component-cell-column-donate a:hover, .team-list-form-new-team a:hover, #existing_team_container:hover, #individual_container:hover, #new_team_container:hover, #fr_find_search:hover, #media .carousel-caption .button:hover, #another_button:hover, #user_type_login_container .action-button:hover, #join_team_button:hover, #personal_page_join_team_button:hover, input#next_step:hover, input#previous_step:hover, input#cancel:hover, #fuw_next:hover, #fuw_cancel:hover, #btn_prev:hover, #team_reform_prompt_button:hover, #pstep_next:hover, #pstep_cancel:hover, .side-bar .donation-link-container .donation-link.indicator-link:hover, .side-bar .donor-wall-link-container .donor-wall-link.indicator-link:hover, div.responsive button.action-button:hover, .profile-info button.btn:hover, #ACTION_SUBMIT_SURVEY_RESPONSE:hover, #reset:hover, #ACTION_CANCEL_RESPONSE_SUBMIT:hover, form .Button:hover, #toggle-honor-btn-container .donation-btn-toggle:hover, #toggle-honor-btn-container .active-button, #toggle-notif-btn-container .donation-btn-toggle:hover, #toggle-notif-btn-container .active-button, .donation-btn-toggle:hover, .donation-btn-toggle.active-button {
+        background-color: #005581;
+        /** background-image: -moz-linear-gradient(top, #005581 0%, #005581 100%);
+        background-image: -webkit-linear-gradient(top, #005581 0%,#005581 100%);
+        background-image: linear-gradient(to bottom, #005581 0%,#005581 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005581', endColorstr='#005581',GradientType=0 ); **/
+        -moz-border: none; /*****/
+        -webkit-border: none; /*****/
+        border: none; /*****/
+        /** margin: 0px !important; remove **/
+        padding: 10px 30px; /*****/
+        border-radius: 4px;
+        text-decoration: none;
+        /* text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important; */
+        -moz-box-shadow: none; /*****/
+        -webkit-box-shadow: none; /*****/
+        box-shadow: none; /*****/
+        color: #fff;
+      }
+      
+      #toggle-honor-btn-container .donation-btn-toggle, #toggle-notif-btn-container .donation-btn-toggle, #toggle-honor-btn-container .donation-btn-toggle:hover, #toggle-notif-btn-container .donation-btn-toggle:hover, #toggle-honor-btn-container .active-button, #toggle-notif-btn-container .active-button, .donation-btn-toggle, .active-button, .donation-btn-toggle:hover, .active-button:hover, .donation-btn-toggle.active-button {
+        float: left;
+        margin-right: 16px !important; /*****/
+        letter-spacing: inherit; /*****/
+        font-weight: 500;
+        border: none; /*****/
+        transition-delay: 0s !important;
+        transition-duration: 0ms !important;
+        transition-property: all !important;
+        transition-timing-function: ease !important;
+        -webkit-transition-delay: 0s !important;
+        -webkit-transition-duration: 0ms !important;
+        -webkit- transition-property: all !important;
+        -webkit-transition-timing-function: ease !important;
+        -o-transition-delay: 0s !important;
+        -o-transition-duration: 0ms !important;
+        -o-transition-property: all !important;
+        -o-transition-timing-function: ease !important;
+        -moz-transition-delay: 0s !important;
+        -moz-transition-duration: 0ms !important;
+        -moz-transition-property: all !important;
+        -moz-transition-timing-function: ease !important;
+        -khtml-transition-delay: 0s !important;
+        -khtml-transition-duration: 0ms !important;
+        -khtml-transition-property: all !important;
+        -khtml-transition-timing-function: ease !important;
+        -ms-transition-delay: 0s !important;
+        -ms-transition-duration: 0ms !important;
+        -ms-transition-property: all !important;
+        -ms-transition-timing-function: ease !important;
+      }
+        #toggle-honor-btn-container .donation-btn-toggle, #toggle-notif-btn-container .donation-btn-toggle, .donation-btn-toggle { color: #000 !important; }
+      #toggle-honor-btn-container .donation-btn-toggle:hover, #toggle-notif-btn-container .donation-btn-toggle:hover, #toggle-honor-btn-container .active-button, #toggle-notif-btn-container .active-button, .active-button, .donation-btn-toggle:hover, .active-button:hover, .donation-btn-toggle.active-button { color: #fff !important; }
+      #pstep_finish span.fa-lock-color { color: #fff; }
+      #pstep_finish:hover span.fa-lock-color, #pstep_finish:hover span.fa-lock-color:hover { color: #fff !important; }
+      .premium-selector-radio-option-short-description { padding: 1em .5em; float:left; }
+        @media screen and (max-width:767px) {
+          #toggle-honor-btn-container .donation-btn-toggle, #toggle-notif-btn-container .donation-btn-toggle, #toggle-honor-btn-container .donation-btn-toggle:hover, #toggle-notif-btn-container .donation-btn-toggle:hover, #toggle-honor-btn-container .active-button, #toggle-notif-btn-container .active-button, .donation-btn-toggle, .active-button, .donation-btn-toggle:hover, .active-button:hover { margin: .5em auto !important; color: #000 /**!important**/; border:solid 1px #005581; text-align:center;}
+          
+        }
+      .html-caption-container #monthly-gift-btn, .html-caption-container #one-time-btn, .html-caption-container monthly-gift-btn:hover, .html-caption-container #one-time-btn:hover, .html-caption-container .active-button:hover  { 
+      float: left; 
+      padding: 18px 10px 14px 10px; 
+      /** margin: 1em .5em .5em .5em; **/
+      margin: 0 0;
+      font-size:1.3em; 
+      letter-spacing:.04em; 
+      font-weight:bold; 
+      color: #fff;
+      min-height: 32px;
+      transition-delay: 0s !important;
+      transition-duration: 0ms !important;
+      transition-property: all !important;
+      transition-timing-function: ease !important;
+      -webkit-transition-delay: 0s !important;
+      -webkit-transition-duration: 0ms !important;
+      -webkit- transition-property: all !important;
+      -webkit-transition-timing-function: ease !important;
+      -o-transition-delay: 0s !important;
+      -o-transition-duration: 0ms !important;
+      -o-transition-property: all !important;
+      -o-transition-timing-function: ease !important;
+      -moz-transition-delay: 0s !important;
+      -moz-transition-duration: 0ms !important;
+      -moz-transition-property: all !important;
+      -moz-transition-timing-function: ease !important;
+      -khtml-transition-delay: 0s !important;
+      -khtml-transition-duration: 0ms !important;
+      -khtml-transition-property: all !important;
+      -khtml-transition-timing-function: ease !important;
+      -ms-transition-delay: 0s !important;
+      -ms-transition-duration: 0ms !important;
+      -ms-transition-property: all !important;
+      -ms-transition-timing-function: ease !important;
+        /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important;*/
+         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 5px; 
+      text-align:center; 
+      border-width: 2px;
+       border-style: solid; 
+      border-color: #005581;
+        background-color: #005581;
+      background-image:none;
+      text-decoration:none; 
+      } 
+      #pstep_finish { float:inherit; /** margin-right: 0 !important; **/ background-color: #eee; }
+      #pstep_previous, #pstep_cancel { margin-right: 1em !important; } 
+      .button-container.clearfix { float:left !important; clear:both !important; margin-top: 2em !important; margin-bottom: 2em;}
+        .button-sub-container {
+          display:block; 
+          float:none; 
+          margin: 0 auto; 
+          /** max-width: 220px;  **/
+          max-width: inherit;
+          width: 100%;
+        }
+      
+      #pstep_finish, #pstep_previous, #pstep_cancel, #pstep_finish:hover, #pstep_previous:hover, #pstep_cancel:hover {
+        color: #fff;
+        font-size: 1.6em;
+        padding: 1.6rem 1.2rem;
+        transition-delay: 0s !important;
+        transition-duration: 0ms !important;
+        transition-property: all !important;
+        transition-timing-function: ease !important;
+        -webkit-transition-delay: 0s !important;
+        -webkit-transition-duration: 0ms !important;
+        -webkit- transition-property: all !important;
+        -webkit-transition-timing-function: ease !important;
+        -o-transition-delay: 0s !important;
+        -o-transition-duration: 0ms !important;
+        -o-transition-property: all !important;
+        -o-transition-timing-function: ease !important;
+        -moz-transition-delay: 0s !important;
+        -moz-transition-duration: 0ms !important;
+        -moz-transition-property: all !important;
+        -moz-transition-timing-function: ease !important;
+        -khtml-transition-delay: 0s !important;
+        -khtml-transition-duration: 0ms !important;
+        -khtml-transition-property: all !important;
+        -khtml-transition-timing-function: ease !important;
+        -ms-transition-delay: 0s !important;
+        -ms-transition-duration: 0ms !important;
+        -ms-transition-property: all !important;
+        -ms-transition-timing-function: ease !important;
+      }
+      #pstep_finish, #pstep_previous, #pstep_cancel {
+        background-color: #6c9201;
+      }
+      #pstep_finish:hover, #pstep_previous:hover, #pstep_cancel:hover {
+        background-color: #597801;
+      }
+      /************ Hide Required Asterisk *********/
+      div.responsive span.field-required { display:none; }
+      div.responsive .form-row label { margin-left:.2em; color: #666;}
+      #filtersubmit {
+        float: left;
+        position: absolute;
+        padding-top: 0;
+        font-size: 1.2em;
+        color: #6c757d;
+        top: 15px; /*****/
+        left: 10px; /*****/
+      }
+      
+      @media screen and (max-width: 767px) { 
+      #pstep_finish, #pstep_previous, #pstep_cancel, #ACTION_SUBMIT_SURVEY_RESPONSE, #reset, #ACTION_CANCEL_RESPONSE_SUBMIT, form .Button, #ACTION_SUBMIT_SURVEY_RESPONSE:hover, #reset:hover, #ACTION_CANCEL_RESPONSE_SUBMIT:hover, form .Button:hover { margin: .5em 0 !important; /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important;*/ } 
+      #ACTION_SUBMIT_SURVEY_RESPONSE, #reset, #ACTION_CANCEL_RESPONSE_SUBMIT, form .Button { width: 100%; }
+      }
+      
+      .html-caption-container .active-button, .html-caption-container .btn-active:hover, .html-caption-container #one-time-btn:hover, .html-caption-container #monthly-gift-btn:hover, input#op.cnclViewCons:hover, .donation-toggle-btn { 
+      background-color: #eeeeee; /* Old browsers */
+      /** background-image: -moz-linear-gradient(top,  #eeeeee 0%, #eeeeee 100%); /* FF3.6-15 */
+      /** background-image: -webkit-linear-gradient(top,  #eeeeee 0%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+      /** background-image: linear-gradient(to bottom,  #eeeeee 0%,#eeeeee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      /** filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */ **/
+        color: #000;
+        -moz-border: 1px solid #005581;
+        -webkit-border: 1px solid #005581;
+      border: 1px solid #005581;
+      text-decoration:none; 
+      font-weight:bold; 
+      /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important;*/
+      }
+      .donation-toggle-btn:hover, #one-time-btn:hover, #monthly-gift-btn:hover, input#email_interest.save:hover {
+      background-color: #005581; /* Old browsers */
+      background-image: -moz-linear-gradient(top,  #005581 0%, #005581 100%); /* FF3.6-15 */
+      background-image: -webkit-linear-gradient(top,  #005581 0%,#005581 100%); /* Chrome10-25,Safari5.1-6 */
+      background-image: linear-gradient(to bottom,  #005581 0%,#005581 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005581', endColorstr='#005581',GradientType=0 ); /* IE6-9 */
+        color: #fff;
+      /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important;*/
+       }
+      input#op.cnclViewCons:hover, input#email_interest.save:hover { text-decoration:none; min-width: 100px; /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important;*/ }
+      
+      .html-caption-container .active-button:hover { background-image:none !important; border-width: 2px;
+       border-style: solid; font-weight:bold;  /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8) !important;*/   }
+      
+      div.donation-level-label-container { margin-top: 5px !important; float:left !important;}
+      .donation-level-input-container label { float:left !important;}
+      div.donation-level-user-entered { padding-top: 5px !important; float:left !important; }
+      .donation-level-user-entered input[type="text"] {
+          font-size: 16px;
+          font-weight: 500;
+          width: 98.8%;
+          -moz-box-shadow: inset 1px 2px 8px rgb(228, 228, 228);
+          -webkit-box-shadow: inset 0 0 4px 7px inset 1px 2px 8px rgb(228, 228, 228);
+          box-shadow: inset 1px 2px 8px rgb(228, 228, 228);
+          padding: 7px 7px 7px 28px !important;
+          background-repeat: no-repeat;
+          margin-bottom: 0px;
+          margin-top: 0px !important;
+         /* background-image: url('../images/content/pagebuilder/dollor.png');*/
+          border-radius: 0;
+      /*padding-left: 28px !important;
+      padding-top: 7px !important;*/
+      float:left !important;
+      vertical-align:middle !important;
+      min-height: 34px;
+      height: auto;
+      }
+      
+      #single_designee_designated, .designated-option label, #single_designee { float:left; }
+      #single_designee_designated, .designated-option label { margin-right: .3em; }
+      
+      /**************** More Donation Form Styles *******************/
+        div.donation-level-label-input-container { display: none; }
+      label + div.donation-level-expanded-label, .donation-level-expanded-label { display:none; margin-left: 0px; float:left; }
+      .ask-message h2 { margin-top: 2em; font-size: 1.75em; margin-bottom: .5em !important; }
+      .ask-message { margin-bottom:1em; margin-top:-1.8em; }
+      div.form-row { margin: .5em 0; }
+      div.responsive legend,#single_designee_row .form-content, #single_designee_row fieldset { width: 100% !important; }
+      #single_designee_row fieldset legend { margin-bottom: .8em; }
+      .form-row {margin-left: 0px !important; }
+      .donation-level-label-input-container > input { float: left; margin-right: .3em;}
+      label[for="level_installmentduration"] { margin-top: .25em; clear:both; float:left; margin-right: .3em; }
+      label[for="responsive_payment_typerouting_numbername"], label[for="payment_typerouting_numbername"], label[for="responsive_payment_typebank_accountname"], label[for="payment_typebank_accountname"], label[for="responsive_payment_typeverify_bank_accountname"], label[for="payment_typeverify_bank_accountname"]  { float:left; margin-right: .3em; }
+      .tender-row { float:left; list-style-type:none; }
+      .button-container.clearfix { width: 100%; }
+      .step-button.previous-step, #null_row, #premium_selector_option_row_-1, #premium-selector-select-option-container, .premium-selector-select-option-container, div.don-level-total-row, #pstep_next, #txn_summary_row, .donation-level-user-entered input[type="text"], #level_flexible_row, span.field-required, #level_flexiblegift_type_Row, div.form-row, .radio-button-container, label[for="level_flexibleduration"], .employer-address-container, label[for="employer_state"], select#employer_state, #organization-name-visible_row, .radio-button-container .form-input-label-block { float:left; }
+      #level_flexiblegift_type_Row legend { display:none; }
+        .radio-button-container .form-input-label-block { max-width: 92%; }
+      #organization-name-visible_row, #tribute_show_honor_fields_row, .custom-field-container-1 { margin: .2em 0 !important; }
+      #level_flexiblegift_type_Row { margin-top: -.7em; }
+      #level_flexible_row, #level_standard_row, #level_installment_row , #level_forever_row, div.don-standard-levels { margin-top: 0; min-width: 100%; max-width: 100%; width: 100%; }
+      label[for="level_flexibleduration"] { padding-top: .35em; margin-right: .5em; }
+      .radio-button-container, #organization-name-visible_row { min-width: 100%; width: 100%; max-width: 100%; margin-right: 0; }
+      #pstep_next { min-width: 200px; }
+      #pstep_finish { min-width: 200px; }
+      .step-button.next-step { float:right; }
+      #pc-margin { margin: 1em auto; }
+      #premium_selector_list_container_premium_selector, #premium_selector_row { margin-top: 0px; }
+      .designated-option { margin-top: 0px !important; }
+      div.donation-level-general-ask, div.html-caption-container { max-width: 100%; }
+      .mobile div.html-caption-container, .premium-selector-select-option-container, div.don-level-total-row, #txn_summary_row, div.form-row div.form-content, #honoree_title_row select, #billing_title_row select, #donor_title_row select, #shipping_title_row select, #donor-organization-name_row, #donor-organization-name_row .form-content, #shipping_addr_country_row .form-content { max-width: 100%; width: 100%; }
+      #shipping_addr_country_row { max-width: 98%; width: 98%; margin-right: .5em; }
+      #employer_name_row { margin-left: -1em; }
+      div.don-level-total-row { margin-left: 0px; width: auto !important; min-width: 65% !important; float:left; clear:both; }
+      input#employer_name { width: 100%; min-width: 100%; max-width: 100%; float: left; }
+      .premium-selector-select-option-container, div.responsive div.premium-selector-option-row { padding: 0 !important; } 
+      #shipping_addr_city_row, #shipping_addr_state_row, #shipping_addr_country_row, #tribute_notify_recip_street1_row, #tribute_notify_recip_street2_row { margin-right: .5em; }
+      #shipping_addr_city_row, #billing_addr_city_row,#donor_addr_city_row, #tribute_notify_recip_city_row { max-width: 42.4% /**!important**/; min-width:42.4%; width: 42.4%; float:left; margin-right:1%;}
+      #billing_first_name_row, #billing_middle_name_row, #billing_last_name_row, #shipping_first_name_row, #shipping_middle_name_row, #shipping_last_name_row, #donor_first_name_row, #donor_middle_name_row, #donor_last_name_row, #billing_addr_country_row, #donor_addr_country_row, #donor_email_address_row, #shipping_email_address_row, #donor_phone_row, #shipping_phone_row, #level_designated0designee_container, #designated-giving-amount-container { width: 48.7%; min-width: 48.7%; max-width: 48.7%; margin-right: 1% !important;}
+      #billing_addr_street1_row, #donor_addr_street1_row, #billing_addr_street2_row, #donor_addr_street2_row, #billing_addr_state_row, #donor_addr_state_row, #tribute_honoree_first_name_row, #tribute_honoree_last_name_row, #donor_first_name_row, #donor_last_name_row, #send_ecard_row, #shipping_addr_street1_row, #shipping_addr_street2_row, #tribute_notify_recip_zip_row { max-width: 32% /**!important**/; min-width:auto; float:left; margin-right:.5em;}
+      #shipping_addr_state_row, #billing_addr_state_row, #donor_addr_state_row, #tribute_notify_recip_state_row { max-width: 42% /**!important**/; min-width:42%; width: auto; float:left; margin-right:.5em;}
+      label[for="shipping_addr_state"], label[for="billing_addr_state"], label[for="donor_addr_state"] { width: auto; min-width: auto; }
+      #billing_addr_zip_row, #donor_addr_zip_row, #shipping_addr_zip_row, #tribute_notify_recip_zip_row { max-width: 12% /**!important**/; min-width:12%; float:left; margin-right:.5em;}
+      input#billing_addr_zipname, input#donor_addr_zipname, input#shipping_addr_zipname, input#tribute_notify_recip_zipname { max-width: 105px; }
+      #billing_addr_state, #donor_addr_state, #shipping_addr_state, #anonymous_donation_row { margin-top:0px; }
+      #tribute_type_row { max-width: 135px; float:left; margin-right: .4em; }
+      #tribute_type_row select ,#select_grid_row, #select_grid_row .form-content  { max-width: 100%; min-width: 100%; width: 100%; }
+      #honoree_title_row, #billing_title_row, #donor_title_row, #shipping_title_row { max-width: 115px; float:left; clear:both; margin-right: .4em; }
+      #tribute_notify_recip_title_row { max-width: 135px; float:left; clear:none; }
+      #billing_addr_state_row .form-content, #donor_addr_state_row .form-content, #shipping_addr_state_row .form-content { margin-top: 3px !important; }
+      #billing_addr_state_row span.field-required, #donor_addr_state_row span.field-required, #shipping_addr_state_row span.field-required, { width: 5%; }
+      #billing_addr_state_row .FormLabel, #donor_addr_state_row .FormLabel { min-width: 25%; width: auto; }
+      #billing_addr_state, #shipping_addr_state, #billing_email_address_row, #ecard_send_date_row, #billing_addr_country, #donor_addr_country, #shipping_addr_country, #shipping_addr_country_row .form-content { width: 100%; clear:both; }
+      #billing_addr_state_row span.field-required, #billing_addr_state_row .FormLabel, #billing_addr_state, #billing_addr_street1_row, #billing_addr_street2_row, #billing_addr_city_row, #billing_addr_state_row, #billing_addr_state_row, #billing_addr_country_row, #billing_addr_zip_row, #donor_addr_state_row span.field-required, #donor_addr_state, #donor_addr_state_row .FormLabel, #donor_addr_state_row, #donor_addr_state_row, #donor_addr_country_row, #donor_addr_zip_row, #tribute_honoree_first_name_row, #tribute_honoree_last_name_row, #donor_first_name_row, #donor_last_name_row, #send_ecard_row, #ecard_send_date_row, #shipping_addr_state_row span.field-required, #shipping_addr_state_row .FormLabel, #shipping_addr_state, #shipping_addr_street1_row, #shipping_addr_street2_row, #shipping_addr_city_row, #shipping_addr_state_row, #shipping_addr_state_row, #shipping_addr_zip_row, #donor_addr_state_row, #donor_addr_zip_row, #donor_addr_city_row, #donor_addr_street2_row, #donor_addr_street1_row, #tribute_notify_recip_country_row .FormLabel, #tribute_notify_recip_state_row .FormLabel, #tribute_notify_recip_city_row, #tribute_notify_recip_state_row, #tribute_notify_recip_zip_row, #tribute_notify_recip_name_row, #tribute_notify_recip_title_row, #donor_email_address_row, #shipping_email_address_row, #donor_phone_row, #shipping_phone_row { float:left; margin-right: 1%; }
+      #billing_suffix_row .FormLabel, #donor_suffix_row .FormLabel, #shipping_suffix_row .FormLabel, .form-content label {
+        font-weight: 500;
+        width: auto;
+        min-width: auto;
+        max-width: 100%; /*****/
+      }
+      #billing_suffix_row div.form-content, #donor_suffix_row div.form-content, #shipping_suffix_row div.form-content{ padding-top:4px; float:left; }
+      #billing_addr_state_row .FormLabel, #donor_addr_state_row .FormLabel, #billing_addr_country_row .FormLabel, #donor_addr_country_row .FormLabel, #billing_title_row .FormLabel, #donor_title_row .FormLabel, #F2fRegContact .cons_dob, .FormLabel, #shipping_addr_state_row .FormLabel, #shipping_addr_country_row .FormLabel, #shipping_title_row .FormLabel, { font-weight: 500; }
+      .donation-level-container-generic-repeat.form-input, h2.section-header-container, #tribute_show_honor_fields_row, #ecard_recpients_row, #select_grid_row, #anonymous_donation_row, #billing_addr_city_row, #billing_addr_country_row, #donor_addr_city_row, #donor_addr_country_row, #shipping_addr_city_row, #shipping_addr_country_row, #tribute_type_row, #donor_first_name_row, #send_ecard_row, #donor_addr_state,  #tribute_notify_recip_country_row, #tribute_notify_recip_city_row, #tribute_notify_recip_title_row, #tribute_notify_recip_street1_row, #donor-organization-name_row, #tribute_message_body_row,  label[for="designation_comments_input"], #designation_comments_input, #tribute_message_closing_row, #tribute_signature_row, #tribute_ecard_subject_row, #e_card_copy_sender_row, h2.section-header-container, .payment-type-element-container, #payment_cc_container, #tr_message_to_participant_row, #premium_selector_option_row_-1, #premium-selector-select-option-container, .premium-selector-select-option-container, #premium_selector_row, #billing_addr_country_row:after, #premium_selector_premiumSelect:after, #level_flexible_row, #level_flexiblegift_type_Row, #payment_typecc_number_row, #responsive_payment_typecc_number_row, #level_flexibleduration_row, #honoree_title_row, #tribute_honoree_deceased_row, #shipping_addr_street1_row, #tribute_ecard_message_row, #salutation_dropdown, div.employer-address-container, select#employer_state, #organization-name-visible_row, #tribute_notify_recip_name_row, #donor_remember_me_row, #responsive_payment_typerouting_number_row, #responsive_payment_typebank_account_row, #responsive_payment_typeverify_bank_account_row, #responsive_payment_type\.account_type_row, #responsive_payment_typeach_confirm_row, .button-container, #tribute_honoree_first_name_row, #giftMatch, #donor_matching_employer_match_information, #tribute_notify_recip_namename, #tribute_ecard_subjectname, #shipping_phone_row, #billing_first_name_row, #shipping_first_name_row, #level_designated0designee_container, #designated-giving-amount-container  { clear:both; }
+      .donation-level-container-generic-repeat.form-input, #tribute_notify_recip_name_row, #tribute_ecard_subject_row { /*margin-top:-1.8em !important;*/ float:left; min-width: 100%; width: 100%; max-width: 100%; }
+      div.payment-field-container li.tender-row { margin-left: .5em; }
+      div.payment-field-container li:first-child.tender-row { margin-left: 0px; }
+      h2.section-header-container {
+        padding-top: 1.6rem; /*****/
+        margin: .3em 0 !important;
+      }
+      #premium_selector_premiumSelect { min-width: auto; max-width: 100%; width: auto; }
+      .section-header-container, #organization-name-visible_row .form-content, #anonymous_donation_row, #tribute_notify_recip_country_row .form-content, #tribute_notify_recip_state_row .form-content, #level_forever_row .form-content, #tribute_show_honor_fields_row, #tribute_show_honor_fields_row .form-content, #payment_typecc_cvv_row .form-content, #tribute_message_body_row .form-content, label[for="tribute_message_bodyname"], label[for="designation_comments_input"], .form-input-label-block, #billing_addr_zip_row .form-content, #donor_addr_zip_row .form-content, #shipping_addr_zip_row .form-content, #tribute_notify_recip_zip_row .form-content, #tribute_ecard_message_row { float:left; width: 100%; }
+      #tribute_show_honor_fields_row, #organization-name-visible_row, #shipping_addr_country_row { float:left; }
+      #tribute_notify_recip_country_row .FormLabel, #donor_notify_recip_country_row .FormLabel, #billing_notify_recip_country_row .FormLabel, #shipping_notify_recip_country_row .FormLabel, #tribute_notify_recip_state_row .FormLabel  {min-width: 85%; max-width: 85%; float:left; display: inline-block;}
+      #billing_addr_country_row input.ui-autocomplete-input, #donor_addr_country_row input.ui-autocomplete-input, #shipping_addr_country_row input.ui-autocomplete-input, #tribute_signature_row input, #tribute_message_closing_row input, #ecard_send_date_MONTH .form-content, #ecard_send_date_DAY .form-content, #ecard_send_date_YEAR .form-content, #responsive_payment_typecc_number_row .form-content, #responsive_payment_typecc_exp_date_row .form-content, #responsive_payment_typecc_cvv_row .form-content, #additional_amount_row .form-content, #message_include_gift_amount_row .form-content, #tribute_ecard_subject_row .form-content, #billing_addr_street1_row .form-content, #billing_addr_street2_row .form-content, #donor_addr_street1_row .form-content, #donor_addr_street2_row .form-content, #shipping_addr_street1_row .form-content, #shipping_addr_street2_row .form-content, #tribute_notify_recip_street1_row .form-content, #tribute_notify_recip_street2_row .form-content, #shipping_addr_state_row .form-content, #billing_addr_state_row .form-content, #donor_addr_state_row .form-content, #tribute_notify_recip_state_row .form-content, div.responsive div.ErrorMessage { max-width: 100%; min-width: 100%; width:auto;}
+      #employer_street_row input, #billing_addr_street1_row input, #billing_addr_street2_row input, #billing_addr_street3_row input, div.employer-address-container input#employer_street, #donor_addr_street1_row input, #donor_addr_street2_row input, #donor_addr_street3_row input, #donor_addr_country_row input.ui-autocomplete-input, #shipping_addr_street1_row input, #shipping_addr_street2_row input, #shipping_addr_street3_row input, #donor_addr_street1_row input, #donor_addr_street2_row input, #donor_addr_street3_row input, #shipping_addr_street1_row input, #shipping_addr_street2_row input, #shipping_addr_street3_row input, #tribute_notify_recip_street1_row input, #tribute_notify_recip_street2_row input, #tribute_notify_recip_street3_row input, #tribute_notify_recip_country_row input.ui-autocomplete-input { max-width: 100%; min-width: 100%; width:auto;}	
+      #responsive_payment_typecc_cvv_row, #payment_typecc_cvv_row {min-width: 400px; }
+      #responsive_payment_typecc_cvv_row input#payment_typecc_cvvname, #payment_typecc_cvv_row input#payment_typecc_cvvname { min-width: 75px; max-width: 75px; clear:both; margin-top:3px; float:left; }
+      #shipping_first_name_row, #shipping_middle_name_row, #shipping_last_name_row, #donor_first_name_row, #donor_middle_name_row, #donor_last_name_row { float:left; margin-right: 10px; }
+      #additional_amountname { max-width: 30%; }
+      input#responsive_payment_typecc_cvvname, #tribute_message_bodyname, #donor_email_opt_in_Row, label[for="tribute_notify_recip_namename"], label[for="tribute_ecard_subjectname"], #shipping_info_same_as_billing_row { float:left; clear:both; }
+      label[for="responsive_payment_typecc_cvvname"] { float:left;}
+      label[for="estate_plan_dropdown"], label[for="interested_in_legacy_giving_dropdown"] { display:none; }
+      span.check-box-form-label-text { font-weight: 500; margin-bottom:.5em; }
+      label[for="postal_notification_option_dropdown"] { margin-bottom:.5em; }
+      .HelpLink { float:left; clear:none;margin-left:.5em; }
+      #billing_addr_street1_row, #billing_addr_street2_row, #donor_addr_street1_row, #donor_addr_street2_row, #shipping_addr_street1_row, #shipping_addr_street2_row,#tribute_notify_recip_street1_row, #tribute_notify_recip_street2_row, #tribute_message_bodyname, #designation_comments_input, #billing_addr_country_row, #tribute_notify_recip_namename, #tribute_ecard_subjectname { max-width: 98.5%; min-width: 98.5%; margin-right: .5em; float:left; }
+      #tribute_message_bodyname { max-width: 48%; min-width: 40%; margin-right: .5em; float:left; }
+      .custom-field-container.form-row { margin: .5em 0; min-width: 100%; float:left; }
+      .custom-field-container .form-input-label-block { min-width: 97%; max-width: 97%; width: 97%; }
+      .custom-field-container fieldset { padding: 0px; float:left; margin: 0; }
+      .custom-field-container .form-content, #payment_typecc_exp_date_row .form-content, #billing_addr_country_row .form-content { float:left; min-width: 100%; max-width: 100%: }
+        #null_row { margin: 1em 0; }
+        #nullbtn { min-width: 235px; -moz-border-radius: 0px; -webkit-border-radius:0px;  border-radius: 0px; }
+      #payment_typecc_exp_date_row, #responsive_payment_typecc_exp_date_row { min-width: 125px; margin-right: .5em; }
+      #pstep_cancel {
+           display: none;
+      }
+      #toggle-flexible-btn-container {
+        width: 100%;
+        float: left;
+        margin-bottom: 1.4em; /*****/
+      }
+      
+      h2.section-header-container { font-size: 1.4em; }
+      #formal_salutation_input { min-width: 53%; max-width: 100%; width: auto; }
+      label[for="tribute_type"] { min-width: 90%; width: auto; max-width: 95%; }
+      .form-content select {
+        border: 1px solid #d9d6cf;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        /* padding: 4px 15px 4px 7px; */
+        border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px;
+        -webkit-border-radius: 4px 0 0 4px;
+        float: left;
+        margin-right: .5em;
+        /** -webkit-box-shadow: inset 3px 3px 3px #f0f0f0;
+        -moz-box-shadow: inset 3px 3px 3px #f0f0f0;
+        box-shadow: inset 3px 3px 3px #f0f0f0; **/
+        max-width: 100%;
+      }
+      .cardExpGroup { padding:0px; margin-top:.2em; }
+      .cardExpGroup #payment_typecc_exp_date_MONTH { min-width: 67px; }
+      .cardExpGroup #payment_typecc_exp_date_YEAR { min-width: 85px; }
+      #ecard_send_date_row .form-content { width: 40%; }
+      #ecard_send_date_MONTH, #ecard_send_date_DAY, #ecard_send_date_YEAR, #payment_typecc_number_row, #payment_typecc_exp_date_row, #payment_typecc_cvv_row, #responsive_payment_typecc_number_row, #responsive_payment_typecc_exp_date_row, #responsive_payment_typecc_cvv_row { max-width: 30%; margin-right: .5em; float:left; }
+      #payment_typecc_exp_date_row, #responsive_payment_typecc_exp_date_row { margin-right: .2em; }
+      #payment_typecc_cvv_row .FormLabelText, label[for="payment_typecc_cvvname"] { float:left; }
+      .premium-selector-option-image { margin: .5em .5em 0 .5em; }
+      .premium-selector-more-info-link { margin-bottom: .5em; float:left; margin-left: .5em; }
+      @media screen and (max-width:960px) {
+      #payment_typecc_number_row, #payment_typecc_exp_date_row, #payment_typecc_cvv_row {min-width: 100%; clear:both; } 
+      }
+      .charity-nav-logo { float:left; }
+      .geotrust-container { width: 115px; float:left; margin-right: 10px;}
+      #level_flexibleduration_row { margin-top: 0px !important; margin-bottom: 1em; }
+      #prayer_intentions_input { vertical-align:top; min-width: 100%; max-width: 100%; width: auto; min-height: 75px; word-wrap:  break-word; }
+        .employer-address-container .form-row { max-width: 32%; margin-right: .5em; }
+      #donor-organization-namename { 
+        /** max-width: 32%; **/
+        max-width: 100%;
+        min-width: 32%; 
+        /** width: 32%; **/
+        width: 100%;
+      }
+      div.donation-level-container { width: 32%; min-width: 32%; max-width: 32%; }
+      div.donation-level-container:last-child, div.donation-level-user-entered { max-width: 100%; min-width: 100%; width:100%;  margin-left: 0px !important; margin-right: 0px; }
+      div.donation-level-input-container, div.donation-level-input-container label { max-width: 100%; min-width: 100%; width:100%; text-align:center;}
+      @media screen and (max-width:767px) {
+      div.donation-level-container  { width: 100%; min-width: 100%; max-width: 100%; margin: .5em auto; }
+      #connection_to_slcc_other_input, #designation_name_other_input, #inscription_criteria_input { min-width: 100%; min-height: 75px; max-width: 100%; width: 100%; }
+        #employer_street_row input, #billing_addr_street1_row input, #billing_addr_street2_row input, #billing_addr_street3_row input, #billing_addr_country_row input.ui-autocomplete-input, #donor_addr_street1_row input, #donor_addr_street2_row input, #donor_addr_street3_row input, #donor_addr_country_row input.ui-autocomplete-input, #shipping_addr_street1_row input, #shipping_addr_street2_row input, #shipping_addr_street3_row input, #shipping_addr_country_row input.ui-autocomplete-input, #tribute_notify_recip_street1_row input, #tribute_notify_recip_street2_row input, #tribute_notify_recip_street3_row input, #tribute_notify_recip_country_row input.ui-autocomplete-input, #tribute_signature_row input, #tribute_message_closing_row input, div.employer-address-container input#employer_street, #billing_addr_street1_row .form-content, #billing_addr_street2_row .form-content, #donor_addr_street1_row .form-content, #donor_addr_street2_row .form-content, #shipping_addr_street1_row .form-content, #shipping_addr_street2_row .form-content, #tribute_notify_recip_street1_row .form-content, #tribute_notify_recip_street2_row .form-content, #ecard_send_date_MONTH .form-content, #ecard_send_date_DAY .form-content, #ecard_send_date_YEAR .form-content, #responsive_payment_typecc_number_row .form-content, #responsive_payment_typecc_exp_date_row .form-content, #responsive_payment_typecc_cvv_row .form-content, #additional_amount_row .form-content, #message_include_gift_amount_row .form-content, input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"], input[type="password"], input[type="submit"], input[type="reset"], input[type="cancel"], input[type="button"], select, #donor_email_address_row, #shipping_email_address_row, #donor_phone_row,#shipping_phone_row, #billing_addr_country_row, .donation-level-container:last-child, .donation-level-container:last-child .donation-level-input-container, .donation-level-container:last-child .donation-level-input-container .donation-level-label-input-container, .donation-level-container:last-child .donation-level-user-entered, #premium_selector_premiumSelect, .employer-address-container .form-row, #donor-organization-namename, #single_designee, div.donation-level-container div.donation-level-input-container input[type="text"], #tribute_notify_recip_namename, #tribute_ecard_subjectname, div.donation-level-container, #billing_first_name_row, #billing_middle_name_row, #billing_last_name_row, #shipping_first_name_row, #shipping_middle_name_row, #shipping_last_name_row, #donor_first_name_row, #donor_middle_name_row, #donor_last_name_row, #billing_addr_country_row, #donor_addr_country_row, #donor_email_address_row, #shipping_email_address_row, #donor_phone_row, ##shipping_phone_row, #level_designated0designee_container, #designated-giving-amount-container  { max-width: 100% !important; min-width: 100%; width:100%;}
+      #billing_first_name_row, #billing_middle_name_row, #billing_last_name_row, #shipping_first_name_row, #shipping_middle_name_row, #shipping_last_name_row, #donor_first_name_row, #donor_middle_name_row, #donor_last_name_row, #billing_addr_country_row, #donor_addr_country_row, #donor_email_address_row, #shipping_email_address_row, #donor_phone_row, #shipping_phone_row, #level_designated0designee_container, #designated-giving-amount-container { margin-right: 0px !important; }
+      .donation-level-user-entered input[type="text"] { float:left; }
+      .donation-level-container-generic-repeat.form-input { margin-top: -.3em !important; }
+      #payment_cc_container h3 { font-size: 1.45em; }
+      #main-content { padding-left: 10px; }
+      .donation-level-container:last-child label { display:none; margin-bottom: .2em; margin-right: 0px !important; }
+      .generic-repeat-label-checkbox-container label, #organization-name-visible_row label, .custom-field-container .form-input-label-block, #tribute_show_honor_fields_row label, .radio-button-container .form-input-label-block, .mobile div.form-input-label-block, #donor_email_opt_in_Row label, .mobile div.responsive div.form-checkbox label, label.custom-element-checkbox-label { float:left; max-width: 90%; min-width: 90%; width: 90%; }
+        textarea { min-width: 95%; max-width: 95%; margin: .5em 0; }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="url"], input[type="password"], input[type="submit"], input[type="reset"], input[type="cancel"], input[type="button"], select, #donor_email_address_row, ##shipping_email_address_row, #donor_phone_row, #shipping_phone_row, #billing_addr_country_row, #donor-organization-namename { margin: .5em 0;} 
+      #single_designee_row { margin: 1em 0 .5em 0 !important;}
+        #payment_typecc_exp_date_MONTH, #payment_typecc_exp_date_YEAR { width: auto !important; max-width: auto !important; min-width: auto !important; }
+      .mobile responsive, div.responsive, .mobile div.responsive { padding-left: .5em; padding-right: .5em; width: 100%; }
+      .geotrust-container { float:none; margin: .5em auto; width: 115px; }
+      .charity-nav-container { clear:both; min-width: 196px; max-width: 196px; width:196px; margin:.5em auto; float:none; text-align:center; }
+      .charity-nav-logo { float:none; }
+      .button-container.clearfix {
+      width: 100% !important;
+      float: none;
+      margin: 1em auto;
+      display: block;
+      clear: both;
+      }
+      div.don-level-total-row, #employer_name_row { margin-left: 0; }
+      #responsive_payment_typecc_cvv_row, #payment_typecc_cvv_row {min-width: 200px; clear:both; }
+      .form-donation-level .FormLabelText, .entry-content h3, .entry-summary h3, .comment-content h3, #single_designee_row fieldset legend { line-height: 1.2em; }
+      #toggle-btn-container { min-width: 100%; max-width: 100%; margin: .3em auto; }
+        #additional_amountname { max-width: 100%; }
+        #billing_addr_city_row, #donor_addr_city_row, #shipping_addr_city_row, #billing_addr_state_row, #donor_addr_state_row, #shipping_addr_state_row, #billing_addr_zip_row, #donor_addr_zip_row, #shipping_addr_zip_row, #toggle-flexible-btn-container .donation-btn-toggle, #level_flexibletotal_row, div.don-level-total-row { width: 100% !important; min-width:100% !important; max-width:100%; margin:.5em 0; clear:both; }
+        .HelpLink { float:none; clear:none; }
+        #employer_street_row input, #billing_addr_street1_row input, #billing_addr_street2_row input, #billing_addr_street3_row input, #billing_addr_country_row input.ui-autocomplete-input, #donor_addr_street1_row input, #donor_addr_street2_row input, #donor_addr_street3_row input, #donor_addr_country_row input.ui-autocomplete-input, #shipping_addr_street1_row input, #shipping_addr_street2_row input, #shipping_addr_street3_row input, #shipping_addr_country_row input.ui-autocomplete-input, #tribute_notify_recip_street1_row input, #tribute_notify_recip_street2_row input, #tribute_notify_recip_street3_row input, #tribute_notify_recip_country_row input.ui-autocomplete-input, #tribute_signature_row input, #tribute_message_closing_row input, div.employer-address-container input#employer_street, #billing_addr_street1_row .form-content, #billing_addr_street2_row .form-content, #donor_addr_street1_row .form-content, #donor_addr_street2_row .form-content, #shipping_addr_street1_row .form-content, #shipping_addr_street2_row .form-content, #tribute_notify_recip_street1_row .form-content, #tribute_notify_recip_street2_row .form-content, #tribute_notify_recip_state_row, #tribute_notify_recip_state_row .form-content, #tribute_notify_recip_zip_row, #tribute_notify_recip_city_row,  #tribute_notify_recip_city_row .form-content, #tribute_notify_recip_zip_row .form-content, #tribute_message_body_row, #tribute_message_body_row .form-content, #tribute_message_bodyname, .custom-field-container, .custom-field-container .form-content, .custom-field-container .form-content > label, .custom-field-container .form-content input[type="text"], .custom-field-container .form-content textarea, .custom-field-container .form-content select, input#billing_addr_zipname, input#donor_addr_zipname, input#shipping_addr_zipname, input#tribute_notify_recip_zipname { max-width: 100% !important; min-width: 100% !important; width:auto !important;}
+      .mobile div.responsive div.form-checkbox label, label.custom-element-checkbox-label { max-width: 94%; }
+      #billing_addr_street1_row, #billing_addr_street2_row, #donor_addr_street1_row, #donor_addr_street2_row, #shipping_addr_street1_row, #shipping_addr_street2_row,#tribute_notify_recip_street1_row, #tribute_notify_recip_street2_row { max-width: 100%; min-width: 100%; margin-right: 0; float:left; }
+        .mobile #level_flexiblegift_type_Row.responsive div.form-row, .mobile div.responsive div.form-row { margin:.3em 0 !important; min-width: 100% !important; }
+      .HelpLink { float:left; clear:both; }
+        .mobile #billing_addr_street1_row input, .mobile #billing_addr_street2_row input, .mobile #billing_addr_street3_row input, .mobile #billing_addr_country_row input.ui-autocomplete-input, .mobile #donor_addr_street1_row input, .mobile #donor_addr_street2_row input, .mobile #donor_addr_street3_row input, .mobile #donor_addr_country_row input.ui-autocomplete-input, .mobile #shipping_addr_street1_row input, .mobile #shipping_addr_street2_row input, .mobile #shipping_addr_street3_row input, .mobile #shipping_addr_country_row input.ui-autocomplete-input, .mobile #tribute_notify_recip_street1_row input, .mobile #tribute_notify_recip_street2_row input, .mobile #tribute_notify_recip_street3_row input, .mobile #tribute_notify_recip_country_row input.ui-autocomplete-input, .mobile #tribute_signature_row input, .mobile #tribute_message_closing_row input, .mobile div.employer-address-container input#employer_street, #tribute_notify_recip_street1_row input#tribute_notify_recip_street1name, #tribute_notify_recip_street2_row input#tribute_notify_recip_street2name { width: 100%; min-width: 100%; max-width: 100%;}
+        .mobile div.responsive div.form-content, #level_forever_row .form-content { margin:0; min-width: 100%; max-width: 100%; width: auto; }
+        .mobile div.responsive button.step-button { min-width: 100%; margin:.5em 0 0 0; width: 100%; max-width:100%; }
+      .button-sub-container { width: 100% !important;} 
+      #ecard_send_date_row .form-content { width: 100%; }
+      #responsive_payment_typecc_number_row, #responsive_payment_typecc_exp_date_row, #responsive_payment_typecc_cvv_row, #payment_typecc_cvv_row { min-width: 100%; float:left; clear:both; margin-right:0px; margin-top:.5em, margin-bottom:.5em; }
+      #payment_typecc_cvvname { max-width: 75px; }
+      #tribute_honoree_first_name_row { clear:both; }
+      div.donation-level-container, div.donation-level-amount-container, .mobile div.responsive div.form-content, div.donation-level-amount-container label, .donation-level-input-container form-input label { margin-top:.08em; margin-bottom: 0px; }
+      }
+      div.button-container {
+          display: inline-block;
+      }
+      label + div.donation-level-user-entered {
+          margin-top: .35em;
+      }
+      
+      .donation-level-label-input-container > input { float: left; margin-right: .3em; }
+      div.donation-level-amount-container + div.donation-level-label-container { margin-left:0px; }
+      .tender-row { float:left; list-style-type:none; }
+      label { font-weight:500; }
+      .fieldContainer label { font-size: 14px; color: #212529; }
+      div.lo-EventBorderContainer, div.lo-BorderContainer { border: 0px; solid #eaeaea; }
+      div.consRegFieldContainer span.heading, div.lo-EventSubHeaderBar { font-size: 1.3em; font-weight:bold; }
+      
+      .PaddedListHeadingsC { font-size: 1.2em; font-weight:bold; }
+      #shipping_title_other_input, #billing_title_other_input, #donor_title_other_input, #tribute_ecard_messagename, #ecard_recpients_row { 
+        min-width: 45%; 
+        max-width: 100%; /** width: auto; **/ 
+        width: 98%;
+      }
+        @media screen and (max-width: 767px) { 
+          .html-caption-container .donation-btn-toggle, .html-caption-container .donation-btn-toggle.active-button, .html-caption-container .donation-btn-toggle:hover, .html-caption-container .donation-btn-toggle.active-button:hover { margin:.5em auto !important; width: 100%; }
+      #pstep_finish, #pstep_finish:hover, #pstep_previous, #pstep_cancel, #ACTION_SUBMIT_SURVEY_RESPONSE, #reset, #ACTION_CANCEL_RESPONSE_SUBMIT, form .Button, #ACTION_SUBMIT_SURVEY_RESPONSE:hover, #reset:hover, #ACTION_CANCEL_RESPONSE_SUBMIT:hover, form .Button:hover  { margin: .5em 0 !important; width: 100%; } 
+      #shipping_title_other_input, #billing_title_other_input, #donor_title_other_input, #tribute_ecard_messagename { min-width: 100%; max-width: 100%; width: 100%; }
+        }
+        #other-tab { clear:both; }
+        /* payment css */
+      @media screen and (max-width: 767px) { .mobile div.payment-field-container div.payment-type-selections span, .mobile div.payment-field-container div.payment-type-selections { width: 100%; }
+      }
+      div.payment-field-container span.internal-payment {
+          border: 0; 
+        background-color: transparent;  
+      }
+      div.payment-field-container .internal-payment span.payment-type-option {
+        text-align: center;
+        background-color: #eee;
+        /** background-image: -moz-linear-gradient(top, #eee 0%, #eee 100%);
+        background-image: -webkit-linear-gradient(top, #eee 0%,#eee 100%);
+        background-image: linear-gradient(to bottom, #eee 0%,#eee 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eee', endColorstr='#eee',GradientType=0 ); **/
+        color: #000;
+        -moz-border:  none !important; /*****/
+        -webkit-border:  none !important; /*****/
+        border:  none !important; /*****/
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+      }
+      
+      div.payment-field-container .internal-payment span.payment-type-option.selected {
+         border: 0;
+      background-color: #005581; /* Old browsers */
+      background-image: -moz-linear-gradient(top,  #005581 0%, #005581 100%); /* FF3.6-15 */
+      background-image: -webkit-linear-gradient(top,  #005581 0%,#005581 100%); /* Chrome10-25,Safari5.1-6 */
+      background-image: linear-gradient(to bottom,  #005581 0%,#005581 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005581', endColorstr='#005581',GradientType=0 ); /* IE6-9 */
+        color: #fff;
+      /*
+        margin-right:4px;
+      background-color: #fdf2e0;
+          background: #fdf2e0;*/
+      -moz-border: 1px solid #005581; -webkit-border: 1px solid #005581; border: 1px solid #005581;
+      }
+      
+      div.payment-field-container .external-payment span.payment-type-option.selected {
+         border: 0;
+      color:#093254;
+        margin-right:4px;
+      background-color: #dadada;
+          background: #dadada;
+      }
+      
+      div.payment-field-container span.payment-type-option {
+        padding: 10px 30px; /*****/
+        border: 0;
+        color: #093254;
+        background: #eaeaea;
+        background-color: #eaeaea;
+        filter: none;
+        min-width: 160px;
+      }
+      
+        /** div.payment-field-container span.external-payment span.payment-type-option { padding: 10px 5px 0; min-width: auto; } **/
+      div.payment-field-container span.external-payment span.payment-type-option {
+        padding: 8px 0;
+        min-width: auto;
+      }
+      div.payment-field-container span.payment-type-option a { color: #000; }
+      div.payment-field-container span.payment-type-option.selected a { color: #fff; }
+      div.payment-field-container span.payment-type-option.selected a, div.payment-field-container span.payment-type-option a {
+        font-size:1.3em;
+        /*padding:18px 20px 14px 20px;*/
+      padding: 0;
+      margin-top: 10px;
+        font-weight:500;
+      }
+      
+      div.payment-field-container span.payment-type-option.selected a:link {
+          color: #fff;
+      }
+      div.payment-field-container span.internal-payment span.payment-type-option {margin:0}
+      ddiv.payment-field-container span.internal-payment span.payment-type-option+span.payment-type-option {
+        margin-left: 16px; /*****/
+      }
+      
+      #responsive_payment_typerouting_number_row, #responsive_payment_typebank_account_row, #responsive_payment_typeverify_bank_account_row {
+        max-width: 100%;
+        float: left;
+        min-width: 50%;
+        width: 100%;
+      }
+      #responsive_payment_type.account_type_row{}
+      .payment-field-container h3 {display:none}
+      div.payment-field-container li.tender-row { display: none;}
+        
+        @media screen and (max-width: 767px) {
+          div.payment-field-container span.internal-payment span.payment-type-option+span.payment-type-option, span.external-payment { margin-left: 0px !important; margin-top:.5em; }
+        }
+      
+      /* End Payment CSS */
+      
+      
+        
+      input#login-username[type="text"], input#email_2[type="email"] { min-width: 100%; }
+      #single_designee { float: right; }
+        
+
+      /* ********************************** */
+/* Generic Element                    */
+/* ********************************** */
+
+div.responsive div.form-content {
+	margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 0;
+}
+
+div.responsive div.form-error {
+  padding: 10px;
+}
+
+/* Page level errors */
+div.responsive div.ErrorMessage.page-error {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+/* Page level error text */
+div.responsive div.ErrorMessage.page-error>span.field-error-text {
+    width: 798px;
+}
+
+/* sets the label and form input element on its own line */
+div.form-row div.form-content>select,
+div.form-row div.form-content>input[type="text"],
+div.form-row div.form-content input.ui-autocomplete-input,
+div.form-row div.form-content>textarea,
+div.form-row div.form-content>button {
+    margin-top: 3px;
+    display: block;
+}
+
+/* keep checkbox on the same line as its label */
+div.form-row.form-checkbox div.form-content>input {
+    display: inline;
+}
+
+/* prevent the error background to not expand the whole screen */ 
+div.form-row div.form-content {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+/* give components spacing between themselves */
+div.form-row {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+div.responsive select.multi-select {
+  width: 160px;
+  padding: 10px;
+}
+
+/* form labels for checkboxes by default should be on its own line */
+span.check-box-form-label-text {
+    display: block;
+}
+
+/* don't display the bullets for lists */
+div.form-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.don-level-total-row {
+    border: 5px solid #DAD4D0;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+div.don-level-total-row span.donation-level-total-label {
+    float: left;
+}
+
+div.don-level-total-row span.donation-level-total-amount {
+    float: right;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+div.button-container {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+div.responsive button.step-button {
+   max-width: 150px;
+} 
+
+/* ********************************** */
+/* Page container                     */
+/* ********************************** */
+
+/* div.donation-form-container.responsive {
+    padding: 25px;
+	background: #F8F8F8;
+	-moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+} */
+
+/* ********************************** */
+/* Section Header                     */
+/* ********************************** */
+.section-header-container {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.section-header-container {
+    margin-top: 20px;
+}
+
+/* ********************************** */
+/* Designated Giving                  */
+/* ********************************** */
+#level_designated_row div.form-content {
+    display: block;
+}
+
+div.contact-amount-container {
+    margin: 10px 0;
+}
+
+div.contact-amount-container input,
+div.contact-amount-container textarea {
+    display: block;
+}
+
+div.contact-name-container,
+div.amount-input-container {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+div.contact-amount-container label {
+    padding-left: 5px;
+}
+
+div.contact-amount-labels label,
+div.contact-amount-controls input {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+div.contact-amount-labels label {
+    padding: 5px;
+}
+
+div.contact-amount-labels label.contact-label,
+div.contact-amount-controls input.contact-input-text {
+    width: 300px;
+}
+
+div.contact-amount-labels label.amount-label,
+div.contact-amount-controls input.amount-input-text {
+    width: 300px;
+}
+
+div.contact-info-container {
+    margin-top: 20px;
+}
+
+div.contact-info-container textarea {
+    display: block;
+}
+
+div.designated-giving-input-row {
+    border: 5px solid #DAD4D0;
+    background-color: #DAD4D0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+div.flexible-designated-giving-container div.section-header {
+  color: #555;
+}
+
+div.designated-giving-input-row label.designated-giving-amount-label {
+  font-size: .8em;
+  color: #555;
+  display: block;
+}
+
+/* Left side of designee selection container */
+div.designated-giving-input-row div.designated-giving-selection-container {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 412px;
+  padding-top: 20px;
+  vertical-align: bottom;
+}
+
+/* Right side of designee selection container */
+div.designated-giving-input-row div.designated-giving-amount-container {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  max-width: 365px;
+}
+
+div.designated-giving-input-row div.designated-giving-amount-container.dual-selector {
+  padding-bottom: 20px;
+}
+
+div.designated-giving-input-row div.designated-giving-selection-container select {
+  width: 240px;
+}
+
+/* *************************************** */
+/* Billing Information Fields              */
+/* *************************************** */
+#employer_street_row input,
+#billing_addr_street1_row input,
+#billing_addr_street2_row input,
+#billing_addr_street3_row input,
+#billing_addr_country_row input.ui-autocomplete-input,
+#donor_addr_street1_row input,
+#donor_addr_street2_row input,
+#donor_addr_street3_row input,
+#donor_addr_country_row input.ui-autocomplete-input,
+#shipping_addr_street1_row input,
+#shipping_addr_street2_row input,
+#shipping_addr_street3_row input,
+#shipping_addr_country_row input.ui-autocomplete-input,
+#tribute_notify_recip_street1_row input,
+#tribute_notify_recip_street2_row input,
+#tribute_notify_recip_street3_row input,
+#tribute_notify_recip_country_row input.ui-autocomplete-input,
+#tribute_signature_row input,
+#tribute_message_closing_row input,
+div.employer-address-container input#employer_street {
+    width: 400px;
+}
+
+#billing_addr_postcode_row input {
+    display: inline;
+}
+
+/* ********************************** */
+/* Transaction Summary                */
+/* ********************************** */
+div.form-row.form-summary div.form-content {
+    display: block;
+}
+
+div.transaction-summary-entry span.entry-value {
+    word-wrap: break-word;
+}
+
+div.transaction-summary-entry span.entry-label,
+div.transaction-summary-entry span.entry-value {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 49%;
+}
+
+div.transaction-summary-entry {
+	background-color: #e9e9e9;
+    border-top: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+h5.summary-section-header {
+    margin: 15px 0 0 0;
+    padding: 18px 15px;
+    background-color: #e9e9e9;
+    width: auto;
+    
+    /* border */
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* ********************************** */
+/* Payment Type                       */
+/* ********************************** */
+div.payment-field-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.payment-field-container div.direct-debit-dialog-message ul {
+  list-style-type: disc;
+}
+div.payment-field-container div.direct-debit-dialog-message li {
+  margin-left: 15px;
+  padding: 5px;
+}
+
+div.payment-field-container div.payment-type-selections a {
+    text-decoration: none;
+}
+
+div.payment-field-container div.payment-type-selections span {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: bottom;
+}
+
+div.payment-field-container span.payment-type-option:hover {
+    cursor: pointer;
+}
+
+div.payment-field-container span.payment-type-option {
+    padding: 10px 20px;
+    border: 2px solid #e4e2dd;
+    color: #3596d4;
+    
+    background-color: #efefef;
+    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #efefef 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#efefef 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#efefef 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 );
+    background: linear-gradient(top, #ffffff 0%,#efefef 100%);
+}
+
+div.payment-field-container span.payment-type-option.selected {
+    
+    background-color: #fdf2e0;
+    background: -moz-linear-gradient(top, #ffffff 0%, #f2c357 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f2c357));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f2c357 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#f2c357 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#f2c357 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2c357',GradientType=0 );
+    background: linear-gradient(top, #ffffff 0%,#f2c357 100%);
+}
+
+/* div.payment-field-container span.payment-type-option.selected a:link {
+    color: #000000;
+} */
+
+div.payment-field-container span.internal-payment span.payment-type-option {
+    border: none;
+}
+
+div.payment-field-container span.internal-payment span.payment-type-option+span.payment-type-option {
+    margin-left: -1px;
+}
+
+/* div.payment-field-container span.internal-payment {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #e4e2dd;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    background-color: #e4e2dd;
+    margin-right: 10px;
+} */
+
+div.payment-field-container span.external-payment span.payment-type-option {
+    margin-right: 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 6px 5px 0;
+}
+
+div.payment-field-container span.payment-type-option input {
+    display: none;
+}
+
+
+/* CSS for the CC fields section */
+div.payment-field-container li.tender-row {
+    display: inline;
+}
+
+div.payment-field-container #responsive_payment_typecc_number_row input {
+    width: 195px;
+}
+
+div.payment-field-container #responsive_payment_typecc_cvv_row input {
+    width: 80px;
+}
+
+div.payment-field-container #responsive_payment_typecc_type_row legend {
+    display: none;
+}
+
+div.ach-sort-code-input-container input {
+  display: inline;
+  vertical-align: middle;
+}
+
+/* ********************************************************** */
+/* Progress Bar                                               */
+/* ********************************************************** */
+div.progress-bar-step-container {
+  padding-right: 18px;
+  margin-bottom: 5px;
+}
+  
+div.progress-bar-step-container,
+div.progress-bar-step-number-container,
+div.progress-bar-step-text-container 
+{
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  font-weight: bold;
+}
+
+div.progress-bar-step-text-container {
+    max-width: 80px;
+    vertical-align: text-top;
+    font-size: 12px;
+    margin-top: -9px;
+    padding-left: 5px;
+}
+
+div.progress-bar-step-container a {
+  text-decoration: none;
+}
+
+div.progress-bar-step-number-container {
+  width:30px;
+  height:30px;
+  border-radius:15px;
+  -moz-border-radius:15px;
+  -webkit-border-radius:15px;
+  font-size:16px;
+  color: #f0efeb;
+  line-height:30px;
+  text-decoration:none;
+  text-align:center;
+  background:#cfccc5;
+}
+
+div.progress-bar-step-text-container {
+  color: #cfccc5;
+}
+
+div.progress-bar-step-current div.progress-bar-step-text-container
+{
+  color:#716e69;
+}
+
+div.progress-bar-step-current div.progress-bar-step-number-container {
+  background: #dea70f;
+}
+
+div.donation-level-expanded-label {
+  margin-left: 10px;
+}
+
+div.donation-level-input-container,
+div.generic-repeat-label-checkbox-container {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+
+div.donation-level-container {
+  border: 2px solid transparent;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+  margin-right: .5em;
+}
+
+div.donation-level-container.selected {
+  border-color: #f1ac09;
+}
+
+div.donation-level-amount-container,
+div.donation-level-label-container
+{
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  max-width: 780px;
+  vertical-align: text-top;
+}
+
+
+span.donation-level-total-amount {
+  font-weight: bold;
+}
+
+div.donation-level-amount-container+div.donation-level-label-container {
+  display: block;
+  margin-top: 5px;
+  margin-left: 24px;  
+}
+
+
+div.form-input-label-block,
+div.donation-level-expanded-label {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: text-top;
+  max-width: 770px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+div.donation-level-general-ask,
+div.html-caption-container {
+  max-width: 770px;
+  overflow: hidden;
+}
+
+label+div.donation-level-expanded-label,
+div.donation-level-user-entered+div.donation-level-expanded-label {
+  display: block;  
+  margin-left: 34px;
+}
+
+div.form-input-choose-block,
+div.donation-level-label-input-container {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+
+div.donation-level-user-entered {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin-top: 10px;
+}
+
+
+label+div.donation-level-user-entered {
+  margin-left: 24px;
+  display: block;
+}
+
+
+/* Forever Donation */
+div#level_foreverduration_row,
+div#level_foreverDirectDebitDayOfMonth_row,
+div.form-row.indented {
+  margin-left: 14px;
+}
+
+select#level_foreverduration,
+select#level_foreverDirectDebitDayOfMonth {
+  margin-left: 24px;
+  margin-top: 10px;
+}
+
+/* Gift Aid Match */
+div.gift-aid-match-container,
+span.gift-aid-match-label.currency-label {
+  font-weight: bold;
+}
+
+span.gift-aid-match-label {
+  font-weight: normal;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+div.indented.gift-aid-ineligible-reason {
+  margin-left: 36px;
+}
+
+/* Gift aid selector */ 
+div.gift-aid-description div.description-text,
+div.direct-debit-description div.description-text {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  max-width: 600px;
+}
+
+div.gift-aid-description div.description-image,
+div.direct-debit-description div.description-image {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: text-bottom;
+}
+
+div.responsive div.form-checkbox label, label.custom-element-checkbox-label {
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	max-width: 800px;
+}
+
+/* ********************************************************** */
+/* eCards                                                     */
+/* ********************************************************** */
+
+div.responsive div.layout-choice-thumbnail-container {
+	margin: 5px;
+	float: left;
+}
+
+div.responsive div.layout-choice-thumbnail-container label {
+	display: block;
+}
+
+div.responsive div.layout-choice-thumbnail-container input {
+	display: block;
+	width: 13px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.responsive div#ecard_send_date_row select {
+	display: inline;
+}
+
+/* *************** */
+/* Custom Elements */
+/* *************** */
+.custom-field-container select {
+	max-width: 400px;
+}
+
+/* ********************************************************** */
+/* Installment Selector                                       */
+/* ********************************************************** */
+div.responsive span.calculated-value-container {
+	font-weight: bold;
+}
+
+/* ********************************************************** */
+/* TR Designated Addon                                        */
+/* ********************************************************** */
+div.responsive div#addon_designated_Row {
+	border: 2px solid #DAD4D0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/* ********************************** */
+/* Captcha                            */
+/* ********************************** */
+div.form-captcha div.form-input {
+    background-color: #e9e9e9;
+    padding: 10px;
+}
+
+div.form-captcha div.captcha-image-container {
+    margin: 0 0 5px 3px;
+}
+
+div.form-captcha a.change-captcha-link {
+    text-decoration: none;
+}
+
+/* ********************************************************** */
+/* Premium Selector                                           */
+/* ********************************************************** */
+div.responsive div.premium-selector-radio-container,
+div.responsive div.premium-selector-select-option-container {
+	border: 1px solid #DAD4D0;
+	background-color: white;
+	padding: 10px 20px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+div.responsive div.premium-selector-radio-option-row,
+div.responsive div.premium-selector-option-row {
+	padding-top: 20px;
+	padding-bottom: 20px;	
+}
+
+div.responsive div.premium-selector-radio-option-row.premium-separator {
+	border-top-style: solid;
+	border-top-color: #DAD4D0;
+	border-top-width: 1px;
+}
+
+div.responsive div.premium-selector-radio-option-row {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+div.responsive div.premium-selector-radio-option-description-img-and-text label {
+	font-weight: bold;
+	display: block;
+}
+
+div.responsive div.premium-selector-config-option-container label {
+	font-weight: bold;
+}
+
+div.responsive span.premium-selector-radio-option-short-description {
+	word-wrap: break-word;
+}
+
+div.responsive div.premium-selector-radio-option-description-img-and-text img,
+div.responsive div.premium-selector-option-description-img-and-text img {
+	float: left;
+  	margin-right: 5px;
+  	margin-bottom: 5px;
+}
+
+div.responsive div.premium-selector-radio-option-description {
+	display: inline-block;
+	zoom: 1;
+    *display: inline;
+	max-width: 750px;
+	vertical-align: text-top; 
+}
+
+div.responsive div.premium-selector-list-container select {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* Matching Gift */
+div.responsive div.matching-gift-container button.step-button {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* ********************************************************** */
+/* Media Query Overrides                                      */
+/* ********************************************************** */
+
+/*      Tablet Layout: 768px.
+        Gutters: 24px.
+        Outer margins: 28px.
+        Inherits styles from: Default Layout.
+        Displays blue border in debug mode.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.mobile div.progress-bar-step-text-container {
+        max-width: 60px;
+    }
+    
+	.mobile .custom-field-container select {
+        max-width: 400px;
+    }
+    
+    /* Page level errors */
+    .mobile div.responsive div.ErrorMessage.page-error {
+        width: auto;
+    }
+
+    /* Page level error text */
+    .mobile div.responsive div.ErrorMessage.page-error>span.field-error-text {
+        width: 615px;
+    }
+    
+  /* Donation Levels element */
+  .mobile div.form-input-label-block,
+  .mobile div.donation-level-label-container
+  {
+    max-width: 600px;
+  }
+
+  .mobile div.indented div.form-input-label-block {
+    max-width: 588px;
+  }
+  
+  .mobile div.donation-level-expanded-label,
+  .mobile div.donation-level-general-ask,
+  .moblie div.html-caption-container {
+    max-width: 590px;
+  }
+
+  div.gift-aid-description div.description-text {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    max-width: 400px;
+  }
+  
+  .mobile div.responsive div.form-checkbox label, label.custom-element-checkbox-label {
+	max-width: 600px;
+  }
+  
+  /* Left side of designee selection container */
+  .mobile div.designated-giving-input-row div.designated-giving-selection-container {
+    width: 300px;
+  }
+  
+  /* Right side of designee selection container */
+  .mobile div.designated-giving-input-row div.designated-giving-amount-container {
+    max-width: 350px;
+    vertical-align: top;
+  }
+  
+  /* Premium Selector Description */
+  .mobile div.responsive div.premium-selector-radio-option-description {
+	max-width: 570px;
+  }
+}
+
+/*      Mobile Layout: 320px.
+        Gutters: 24px.
+        Outer margins: 34px.
+        Inherits styles from: Default Layout.
+        Displays red border in debug mode.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	/* give components spacing between themselves */
+	.mobile div.responsive div.form-row {
+		margin-top: 15px;
+	    margin-bottom: 15px;
+	}
+	.mobile div.responsive div.form-content {
+		margin-top: 15px;
+	    margin-bottom: 15px;
+	}
+	
+	.mobile div.responsive div.form-error div.form-content {
+	   padding-left: 0;
+	   padding-right: 0;
+	}
+	
+	.mobile div.responsive textarea {
+        max-width: 186px;
+    }
+    
+    /* Page level errors */
+    .mobile div.responsive div.ErrorMessage.page-error {
+        width: auto;
+    }
+
+    /* Page level error text */
+    .mobile div.responsive div.ErrorMessage.page-error>span.field-error-text {
+        width: 185px;
+    }
+    
+    .mobile div.responsive div.ErrorMessage.page-error>span.field-error-indicator {
+        vertical-align: baseline;
+    }
+    
+    /* ********************************** */
+    /* Page container                     */
+    /* ********************************** */
+    .mobile div.donation-form-container.responsive {
+        padding: 10px;
+    }
+    
+    /* *************************************** */
+    /* Buttons                                 */
+    /* *************************************** */
+    .mobile div.button-container {
+      text-align: center;
+    }
+    
+    .mobile div.button-sub-container {
+      width: 220px;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+    }
+    
+    .mobile div.responsive button.step-button {
+      width: 220px;
+      max-width: 220px;
+      float: none;
+    } 
+
+    /* *************************************** */
+    /* Billing Information Fields              */
+    /* *************************************** */
+
+    .mobile #billing_addr_street1_row input,
+	.mobile #billing_addr_street2_row input,
+	.mobile #billing_addr_street3_row input,
+	.mobile #billing_addr_country_row input.ui-autocomplete-input,
+	.mobile #donor_addr_street1_row input,
+	.mobile #donor_addr_street2_row input,
+	.mobile #donor_addr_street3_row input,
+	.mobile #donor_addr_country_row input.ui-autocomplete-input,
+	.mobile #shipping_addr_street1_row input,
+	.mobile #shipping_addr_street2_row input,
+	.mobile #shipping_addr_street3_row input,
+	.mobile #shipping_addr_country_row input.ui-autocomplete-input,
+	.mobile #tribute_notify_recip_street1_row input,
+	.mobile #tribute_notify_recip_street2_row input,
+	.mobile #tribute_notify_recip_street3_row input,
+	.mobile #tribute_notify_recip_country_row input.ui-autocomplete-input,
+	.mobile #tribute_signature_row input,
+	.mobile #tribute_message_closing_row input,
+	.mobile div.employer-address-container input#employer_street {
+        width: 185px;
+    }
+    
+    .mobile #billing_addr_country_row select,
+    .mobile #billing_addr_state_row select,
+    .mobile #donor_addr_state_row select,
+    .mobile #donor_addr_country_row select,
+    .mobile #donor_occupation_row select,
+    .mobile #shipping_addr_country_row select,
+    .mobile #shipping_addr_state_row select,
+    .mobile #tribute_notify_recip_state_row select,
+    .mobile #tribute_notify_recip_country_row select,
+    .mobile .custom-field-container select,
+    .mobile div.employer-address-container select {
+        max-width: 185px;
+    }
+    
+    .mobile #billing_info_name div.form-row {
+        display: block;
+    }
+    
+    .mobile #billing_addr_postcode_matchingAddresses {
+        width: 100%;
+    }
+    
+    /* ********************************** */
+    /* Payment Type                       */
+    /* ********************************** */
+    .mobile div.payment-field-container span.internal-payment {
+        background-color: transparent;
+        border: none;
+    }
+    
+    .mobile div.payment-field-container span.internal-payment span.payment-type-option {
+        border: 2px solid #e4e2dd;
+    }
+    
+    .mobile div.payment-field-container div.payment-type-selections {
+        width: 240px;
+    }
+    
+    .mobile div.payment-field-container div.payment-type-selections span {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+    
+    .mobile div.payment-field-container span.payment-type-option {
+        margin-bottom: 10px;
+    }
+    
+    .mobile div.payment-field-container span.internal-payment span.payment-type-option:first-child {
+        margin-right: 0;
+    }
+    
+    /* ********************************** */
+    /* Transaction Summary                */
+    /* ********************************** */
+    .mobile div.transaction-summary-entry span.entry-label,
+    .mobile div.transaction-summary-entry span.entry-value {
+        display: block;
+        width: auto;
+    }
+    
+    /* ********************************** */
+    /* Progress Bar                       */
+    /* ********************************** */
+
+	.mobile div.progress-bar-step-text-container {
+        display: none;
+    }
+
+    .mobile div.form-input-label-block {
+      max-width: 176px;
+    }
+    
+    .mobile div.indented div.form-input-label-block {
+      max-width: 156px;
+    }
+
+    /* Donation Levels element */
+    .mobile div.donation-level-expanded-label,
+    .mobile div.donation-level-amount-container+div.donation-level-expanded-label,
+    .mobile div.donation-level-label-container+div.donation-level-expanded-label,
+    .mobile div.donation-level-user-entered+div.donation-level-expanded-label {
+      display: none;
+    }
+    
+    .mobile div.donation-level-general-ask {
+      display: none;
+    }
+
+    .mobile div.donation-level-label-container {
+      max-width: 140px;
+    }
+    
+    .mobile div.gift-aid-description div.description-text {
+      display: block;
+    }
+    
+    .mobile div.gift-aid-description div.description-image {
+      display: block;
+    }
+
+	.mobile div.responsive div.form-checkbox label, label.custom-element-checkbox-label {
+		max-width: 180px;
+	}
+	
+	.mobile div.html-caption-container {
+		width: 220px;
+	}
+  
+    /* eCard */
+    .mobile div#preview_button_row button {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+	/* Add space between radio buttons for ease of clicking */
+	.mobile div.radio-button-container {
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+	
+    /* Left side of designee selection container */
+    .mobile div.designated-giving-input-row div.designated-giving-selection-container {
+        display: block;
+        width: auto;
+        padding-top: 0;
+    }
+  
+    /* Right side of designee selection container */
+    .mobile div.designated-giving-input-row div.designated-giving-amount-container {
+        display: block;
+        width: auto;
+    }
+    
+    .mobile div.designated-giving-input-row div.designated-giving-amount-container.dual-selector {
+        padding-bottom: 0px;
+    }
+  
+    .mobile div.designated-giving-input-row div.designated-giving-selection-container select {
+        width: 240px;
+    }
+    
+    .mobile div.designated-giving-input-row div.designated-giving-selection-container select {
+        width: 195px;
+        margin-bottom: 22px;
+    }
+    .mobile div.form-error  div.designated-giving-input-row div.designated-giving-selection-container select {
+        width: 180px;
+    }
+    .mobile div.designated-giving-input-row div.designated-giving-amount-container input {
+        width: 179px;
+    }
+    .mobile div.form-error div.designated-giving-input-row div.designated-giving-amount-container input {
+        width: 164px;
+    }
+    
+    .mobile div.designated-giving-input-row label.designated-giving-amount-label {
+        margin-left: 0px;
+    }
+    
+    .mobile div.form-designee div.designated-option label,
+    .mobile div.form-designee div.unrestricted-option label {
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        width: 180px;
+    }
+    
+    .mobile div.form-designee div.designated-option select {
+        display: block;
+        margin-left: 25px;
+    }
+    
+    .mobile div.form-designee div.unrestricted-option,
+    .mobile div.form-designee div.designated-option {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+
+  /* Matching Gift */
+  div.responsive div.matching-gift-container button.step-button {
+    margin-left: 2px;
+    margin-right: 0px;
+    width: 206px;
+    max-width: 206px;
+    display: block;    
+  }
+
+  /* Premium Selector Description */
+  .mobile div.responsive div.premium-selector-radio-option-description {
+	max-width: 140px;
+  }
+  
+  .mobile div.responsive a.premium-selector-more-info-link {
+  	display: none;
+  }
+  
+  .mobile div.responsive img.premium-selector-option-image {
+  	max-width: 42px;
+  	height: auto;
+  }
+  
+  
+  .mobile div.responsive div.premium-selector-list-container select {
+  	max-width: 200px;
+  	font-size: .825em;
+  }
+  
+
+}
+
+/*      Wide Mobile Layout: 480px.
+        Gutters: 24px.
+        Outer margins: 22px.
+        Inherits styles from: Default Layout, Mobile Layout.
+        Displays yellow border in debug mode.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .mobile div.responsive div.form-error div.form-content {
+       padding-left: 10px;
+       padding-right: 10px;
+    }
+    
+    /* Page level errors */
+    .mobile div.responsive div.ErrorMessage.page-error {
+        width: auto;
+    }
+
+    /* Page level error text */
+    .mobile div.responsive div.ErrorMessage.page-error>span.field-error-text {
+        width: 368px;
+    }
+    
+    .mobile div.responsive div.ErrorMessage.page-error>span.field-error-indicator {
+        vertical-align: top;
+    }
+    
+    /* *************************************** */
+    /* Buttons                                 */
+    /* *************************************** */
+
+  .mobile div.button-container {
+    text-align: center;
+  }
+  
+  .mobile div.button-sub-container {
+    width: 250px;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+  }
+  
+  .mobile div.responsive button.step-button {
+    width: 250px;
+    max-width: 250px;
+  } 
+
+    .mobile div.form-input-label-block {
+      max-width: 344px;
+    }
+    
+    .mobile div.indented div.form-input-label-block {
+      max-width: 340px;
+    }
+	
+    /* *************************************** */
+    /* Billing Information Fields              */
+    /* *************************************** */
+    .mobile #billing_addr_street1_row input,
+	.mobile #billing_addr_street2_row input,
+	.mobile #billing_addr_street3_row input,
+	.mobile #billing_addr_country_row input.ui-autocomplete-input,
+	.mobile #donor_addr_street1_row input,
+	.mobile #donor_addr_street2_row input,
+	.mobile #donor_addr_street3_row input,
+	.mobile #donor_addr_country_row input.ui-autocomplete-input,
+	.mobile #shipping_addr_street1_row input,
+	.mobile #shipping_addr_street2_row input,
+	.mobile #shipping_addr_street3_row input,
+	.mobile #shipping_addr_country_row input.ui-autocomplete-input,
+	.mobile #tribute_notify_recip_street1_row input,
+	.mobile #tribute_notify_recip_street2_row input,
+	.mobile #tribute_notify_recip_street3_row input,
+	.mobile #tribute_notify_recip_country_row input.ui-autocomplete-input,
+	.mobile #tribute_signature_row input,
+	.mobile #tribute_message_closing_row input,
+	.mobile div.employer-address-container input#employer_street {
+        width: 300px;
+    }
+    
+    .mobile #billing_addr_country_row select,
+    .mobile #billing_addr_state_row select,
+    .mobile #donor_addr_state_row select,
+    .mobile #donor_addr_country_row select,
+    .mobile #donor_occupation_row select,
+    .mobile #shipping_addr_country_row select,
+    .mobile #shipping_addr_state_row select,
+    .mobile #tribute_notify_recip_state_row select,
+    .mobile #tribute_notify_recip_country_row select,
+    .mobile div.employer-address-container select {
+        max-width: none;
+    }
+    
+	.mobile .custom-field-container select {
+	    max-width: 300px;
+	}
+
+    /* ********************************** */
+    /* Transaction Summary                */
+    /* ********************************** */
+    .mobile div.transaction-summary-entry span.entry-label,
+    .mobile div.transaction-summary-entry span.entry-value {
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        width: 49%;
+    }
+    
+    /* ********************************** */
+    /* Payment Type                       */
+    /* ********************************** */
+    
+    .mobile div.payment-field-container #responsive_payment_typepay_typeradio_row {
+        text-align: center;
+    }
+    
+    /* Donation Levels element */
+    .mobile div.donation-level-label-container
+    {
+      max-width: 320px;
+    }
+    
+  .mobile div.responsive div.form-checkbox label, label.custom-element-checkbox-label {
+	max-width: 360px;
+  }
+  
+  .mobile div.html-caption-container {
+  	width: 360px;
+  }
+  
+  .mobile div.designated-giving-input-row div.designated-giving-selection-container select {
+    width: 240px;
+  }
+  
+  .mobile div.form-designee div.designated-option label,
+  .mobile div.form-designee div.unrestricted-option label {
+    width: 340px;
+  }
+
+  /* Premium Selector Description */
+  .mobile div.responsive div.premium-selector-radio-option-description {
+	max-width: 320px;
+  }
+  
+  .mobile div.responsive img.premium-selector-option-image {
+  	max-width: 60px;
+  	height: auto;
+  }
+  
+  .mobile div.responsive div.premium-selector-list-container select {
+  	max-width: 390px;
+  }
+  
+
+}
+
+.aural-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+-->
+      </style>    
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

@@ -1,0 +1,164 @@
+                            <h2 className="section-header-container">
+                            Billing Information
+                            </h2>
+
+                            <div id="billing_first_name_row" className="form-row form-text form-row-32">
+                                <div className="form-content">
+                                    <span className="field-required"></span>
+                                    <label for="billing_first_namename">First Name</label>
+                                    <input type="text" name="billing_first_namename" id="billing_first_namename" value="" maxlength="50" className="form-control" />
+                                </div>
+                            </div>
+
+                            <div id="billing_last_name_row" className="form-row form-text form-row-33">
+                                <div className="form-content">
+                                    <span className="field-required"></span>
+                                    <label for="billing_last_namename">Last Name</label>
+                                    <input type="text" name="billing_last_namename" id="billing_last_namename" value="" maxlength="50" className="form-control" />
+                                </div>
+                            </div>
+
+                            <div id="donor_email_address_row" className="form-row form-text form-row-34">
+                                <div className="form-content">
+                                    <span className="field-required"></span>
+                                    <label for="donor_email_addressname">Email</label>
+                                    <input type="text" name="donor_email_addressname" id="donor_email_addressname" value="" maxlength="255" className="form-control" />
+                                </div>
+                            </div>
+
+                            <div id="billing_addr_street1_row" className="form-row form-text form-row-35">
+                                <div className="form-content">
+                                    <span className="field-required"></span>
+                                    <label for="billing_addr_street1name">Street Address</label>
+                                    <input type="text" name="billing_addr_street1name" id="billing_addr_street1name" value="" maxlength="50" className="form-control" />
+                                </div>
+                            </div>
+
+                            <div id="billing_addr_city_row" className="form-row form-text form-row-36">
+                                <div className="form-content">
+                                    <span className="field-required"></span>
+                                    <label for="billing_addr_cityname">City</label>
+                                    <input type="text" name="billing_addr_cityname" id="billing_addr_cityname" value="" maxlength="50" className="form-control" />
+                                </div>
+                            </div>
+
+                            <div id="billing_addr_state_row" className="form-row form-selectlist form-row-37">
+                                <div className="form-content">
+                                    <span className="field-required"></span>
+                                    <label className="FormLabel" for="billing_addr_state">State</label>
+                                    <select name="billing_addr_state" id="billing_addr_state" size="1" onchange="fire_obs_comp_event('billing_addr_state', this)" className="form-control">
+                                        <option></option>
+                                        <option value="AK">AK - Alaska</option>
+                                        <option value="AL">AL - Alabama</option>
+                                        <option value="AR">AR - Arkansas</option>
+                                        <option value="AZ">AZ - Arizona</option>
+                                        <option value="CA">CA - California</option>
+                                        <option value="CO">CO - Colorado</option>
+                                        <option value="CT">CT - Connecticut</option>
+                                        <option value="DC">DC - District of Columbia</option>
+                                        <option value="DE">DE - Delaware</option>
+                                        <option value="FL">FL - Florida</option>
+                                        <option value="GA">GA - Georgia</option>
+                                        <option value="HI">HI - Hawaii</option>
+                                        <option value="IA">IA - Iowa</option>
+                                        <option value="ID">ID - Idaho</option>
+                                        <option value="IL">IL - Illinois</option>
+                                        <option value="IN">IN - Indiana</option>
+                                        <option value="KS">KS - Kansas</option>
+                                        <option value="KY">KY - Kentucky</option>
+                                        <option value="LA">LA - Louisiana</option>
+                                        <option value="MA">MA - Massachusetts</option>
+                                        <option value="MD">MD - Maryland</option>
+                                        <option value="ME">ME - Maine</option>
+                                        <option value="MI">MI - Michigan</option>
+                                        <option value="MN">MN - Minnesota</option>
+                                        <option value="MO">MO - Missouri</option>
+                                        <option value="MS">MS - Mississippi</option>
+                                        <option value="MT">MT - Montana</option>
+                                        <option value="NC">NC - North Carolina</option>
+                                        <option value="ND">ND - North Dakota</option>
+                                        <option value="NE">NE - Nebraska</option>
+                                        <option value="NH">NH - New Hampshire</option>
+                                        <option value="NJ">NJ - New Jersey</option>
+                                        <option value="NM">NM - New Mexico</option>
+                                        <option value="NV">NV - Nevada</option>
+                                        <option value="NY">NY - New York</option>
+                                        <option value="OH">OH - Ohio</option>
+                                        <option value="OK">OK - Oklahoma</option>
+                                        <option value="OR">OR - Oregon</option>
+                                        <option value="PA">PA - Pennsylvania</option>
+                                        <option value="RI">RI - Rhode Island</option>
+                                        <option value="SC">SC - South Carolina</option>
+                                        <option value="SD">SD - South Dakota</option>
+                                        <option value="TN">TN - Tennessee</option>
+                                        <option value="TX">TX - Texas</option>
+                                        <option value="UT">UT - Utah</option>
+                                        <option value="VA">VA - Virginia</option>
+                                        <option value="VT">VT - Vermont</option>
+                                        <option value="WA">WA - Washington</option>
+                                        <option value="WI">WI - Wisconsin</option>
+                                        <option value="WV">WV - West Virginia</option>
+                                        <option value="WY">WY - Wyoming</option>
+                                        <option value="AS">AS - American Samoa</option>
+                                        <option value="FM">FM - Federated States of Micronesia</option>
+                                        <option value="GU">GU - Guam</option>
+                                        <option value="MH">MH - Marshall Islands</option>
+                                        <option value="MP">MP - Northern Mariana Islands</option>
+                                        <option value="PR">PR - Puerto Rico</option>
+                                        <option value="PW">PW - Palau</option>
+                                        <option value="VI">VI - Virgin Islands</option>
+                                        <option value="AA">AA - Armed Forces Americas</option>
+                                        <option value="AE">AE - Armed Forces</option>
+                                        <option value="AP">AP - Armed Forces Pacific</option>
+                                        <option value="AB">AB - Alberta</option>
+                                        <option value="BC">BC - British Columbia</option>
+                                        <option value="MB">MB - Manitoba</option>
+                                        <option value="NB">NB - New Brunswick</option>
+                                        <option value="NL">NL - Newfoundland and Labrador</option>
+                                        <option value="NS">NS - Nova Scotia</option>
+                                        <option value="NT">NT - Northwest Territories</option>
+                                        <option value="NU">NU - Nunavut</option>
+                                        <option value="ON">ON - Ontario</option>
+                                        <option value="PE">PE - Prince Edward Island</option>
+                                        <option value="QC">QC - Quebec</option>
+                                        <option value="SK">SK - Saskatchewan</option>
+                                        <option value="YT">YT - Yukon</option>
+                                        <option value="None">None</option>
+                                        </select>
+                                </div>
+                            </div>
+
+                            <div id="billing_addr_zip_row" className="form-row form-text form-row-38">
+                                <div className="form-content">
+                                    <span className="field-required"></span>
+                                    <label for="billing_addr_zipname">ZIP</label>
+                                    <input type="text" name="billing_addr_zipname" id="billing_addr_zipname" value="" maxlength="50" className="form-control" />
+                                </div>
+                            </div>
+
+
+--------------------------------------
+
+                            <div id="payment_cc_container" className="payment-field-container">
+                                <h3>Credit Card Information:</h3>
+                                <div id="responsive_payment_typecc_type_row" className="form-row form-radio-array form-row-41">
+                                    <div className="form-content">
+                                        <fieldset>
+                                            <legend>Credit Card Type:</legend>
+                                            <ul className="radio-array-list">
+                                                <li className="tender-row ">
+                                                    <img src="../images/discovercard_sm.gif" alt="Discover" name="responsive_payment_typecc_type_Discover" id="responsive_payment_typecc_type_Discover" />
+                                                </li><li className="tender-row ">
+                                                <img src="../images/amex_small.gif" alt="American Express" name="responsive_payment_typecc_type_American_Express" id="responsive_payment_typecc_type_American_Express" />
+                                                </li><li className="tender-row ">
+                                                <img src="../images/mastercd_small.gif" alt="MasterCard" name="responsive_payment_typecc_type_MasterCard" id="responsive_payment_typecc_type_MasterCard" />
+                                                </li><li className="tender-row ">
+                                                <img src="../images/visa_small.gif" alt="Visa" name="responsive_payment_typecc_type_Visa" id="responsive_payment_typecc_type_Visa" />
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+
+----------------------------
