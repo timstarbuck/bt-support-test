@@ -6,10 +6,13 @@ const ThankYouPage = () => {
     const params = queryString.parse(useLocation().search);
     const amount = params.amount ? params.amount : 1.01;
 
+    //var gtag = gtag || {};
+
     useEffect(() => {
-        if (gtag) {
+
+        if (window.gtag !== {}) {
             console.log('sending purchase')
-            gtag('event', 'purchase', {
+            window.gtag('event', 'purchase', {
             "transaction_id": new Date().getTime(),
             "value": amount,
             "currency": "USD",
@@ -31,7 +34,7 @@ const ThankYouPage = () => {
         } else {
             console.log('gtag not defined');
         }
-    }, []);
+    }, [amount, window.gtag]);
 
     return (
         <div id="ffbh-content">
