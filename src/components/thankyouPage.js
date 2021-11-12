@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useLocation } from 'react-router';
 import queryString from 'query-string';
 
@@ -6,6 +6,32 @@ const ThankYouPage = () => {
     const params = queryString.parse(useLocation().search);
     const amount = params.amount ? params.amount : 1.01;
 
+    useEffect(() => {
+        if (gtag) {
+            console.log('sending purchase')
+            gtag('event', 'purchase', {
+            "transaction_id": new Date().getTime(),
+            "value": amount,
+            "currency": "USD",
+            "items": [
+                // {
+                //   "id": "P67890",
+                //   "name": "Flame challenge TShirt",
+                //   "list_name": "Search Results",
+                //   "brand": "MyBrand",
+                //   "category": "Apparel/T-Shirts",
+                //   "variant": "Red",
+                //   "list_position": 2,
+                //   "quantity": 1,
+                //   "price": '3.0'
+                // }
+            ]
+            });
+            console.log('sent purchase')
+        } else {
+            console.log('gtag not defined');
+        }
+    }, []);
 
     return (
         <div id="ffbh-content">
