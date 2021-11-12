@@ -16,6 +16,35 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-W4G3QW7');</script>
+    <script>
+      var urlParams = new URLSearchParams(window.location.search);
+      console.log(urlParams);
+      var amount = urlParams.get('amount');
+      var isCompleted = urlParams.get('donation') == "completed";
+      if (isCompleted) {
+        console.log('sending purchase');
+        gtag('event', 'purchase', {
+          "transaction_id": new Date().getTime(),
+          "value": amount,
+          "currency": "USD",
+          "items": [
+            // {
+            //   "id": "P67890",
+            //   "name": "Flame challenge TShirt",
+            //   "list_name": "Search Results",
+            //   "brand": "MyBrand",
+            //   "category": "Apparel/T-Shirts",
+            //   "variant": "Red",
+            //   "list_position": 2,
+            //   "quantity": 1,
+            //   "price": '3.0'
+            // }
+          ]
+        });
+      }
+
+    </script>
+
   <!-- End Google Tag Manager -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -3382,7 +3411,7 @@ px      68    160    252    344    436    */
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4G3QW7"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
