@@ -7,6 +7,7 @@ const ThankYouPage = () => {
     const amount = params.amount ? params.amount : 1.01;
     const content_name = params.content_name ? params.content_name : 'default-content-name';
     const content_ids = params.content_ids ? params.content_ids : 'default-content-ids';
+    const donate = params.donate ? true : false;
 
 
     //var gtag = gtag || {};
@@ -15,7 +16,6 @@ const ThankYouPage = () => {
 
         if (window.gtag !== {}) {
             console.log('sending purchase')
-            window.gtag('event', 'donate', {});
             window.gtag('event', 'purchase', {
             "transaction_id": new Date().getTime(),
             "value": amount,
@@ -37,6 +37,11 @@ const ThankYouPage = () => {
              ]
             });
             console.log('sent purchase')
+            if (donate) {
+                console.log('sending donate');
+                window.gtag('event', 'donate', {});
+                console.log('sent donate');
+            }
         } else {
             console.log('gtag not defined');
         }
