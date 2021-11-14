@@ -15,25 +15,26 @@ const ThankYouPage = () => {
 
         if (window.gtag !== {}) {
             console.log('sending purchase')
+            window.gtag('event', 'donate', {});
             window.gtag('event', 'purchase', {
-            "transaction_id": new Date().getTime(),
+            //"transaction_id": new Date().getTime(),
             "value": amount,
             "currency": "USD",
             "content_name" : content_name,
             "content_ids" : content_ids,
-            "items": [
-                // {
-                //   "id": "P67890",
-                //   "name": "Flame challenge TShirt",
-                //   "list_name": "Search Results",
-                //   "brand": "MyBrand",
-                //   "category": "Apparel/T-Shirts",
-                //   "variant": "Red",
-                //   "list_position": 2,
-                //   "quantity": 1,
-                //   "price": '3.0'
-                // }
-            ]
+            // "items": [
+            //     // {
+            //     //   "id": "P67890",
+            //     //   "name": "Flame challenge TShirt",
+            //     //   "list_name": "Search Results",
+            //     //   "brand": "MyBrand",
+            //     //   "category": "Apparel/T-Shirts",
+            //     //   "variant": "Red",
+            //     //   "list_position": 2,
+            //     //   "quantity": 1,
+            //     //   "price": '3.0'
+            //     // }
+            // ]
             });
             console.log('sent purchase')
         } else {
