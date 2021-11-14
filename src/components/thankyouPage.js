@@ -17,12 +17,12 @@ const ThankYouPage = () => {
         if (window.gtag !== {}) {
             console.log('sending purchase')
             window.gtag('event', 'purchase', {
-            "transaction_id": new Date().getTime(),
+            //"transaction_id": new Date().getTime(),
             "value": amount,
             "currency": "USD",
             "content_name" : content_name,
             "content_ids" : content_ids,
-             "items": [
+             //"items": [
             //     // {
             //     //   "id": "P67890",
             //     //   "name": "Flame challenge TShirt",
@@ -34,7 +34,7 @@ const ThankYouPage = () => {
             //     //   "quantity": 1,
             //     //   "price": '3.0'
             //     // }
-             ]
+             //]
             });
             console.log('sent purchase')
             if (donate) {
