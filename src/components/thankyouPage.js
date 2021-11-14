@@ -5,6 +5,9 @@ import queryString from 'query-string';
 const ThankYouPage = () => {
     const params = queryString.parse(useLocation().search);
     const amount = params.amount ? params.amount : 1.01;
+    const content_name = params.content_name ? params.content_name : 'default-content-name';
+    const content_ids = params.content_ids ? params.content_ids : 'default-content-ids';
+
 
     //var gtag = gtag || {};
 
@@ -16,6 +19,8 @@ const ThankYouPage = () => {
             "transaction_id": new Date().getTime(),
             "value": amount,
             "currency": "USD",
+            "content_name" : content_name,
+            "content_ids" : content_ids,
             "items": [
                 // {
                 //   "id": "P67890",
