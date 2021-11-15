@@ -16,7 +16,7 @@ const ThankYouPage = () => {
 
         if (window.dataLayer) {
             console.log('sending purchase')
-            window.dataLayer.push(['event', 'purchase', {
+            window.dataLayer.push([ {'event' : 'purchase'}, {
             //"transaction_id": new Date().getTime(),
             "value": amount,
             "currency": "USD",
@@ -39,7 +39,7 @@ const ThankYouPage = () => {
             console.log('sent purchase')
             if (donate) {
                 console.log('sending donate');
-                window.dataLayer.push(['event', 'donate', {}]);
+                window.dataLayer.push([{'event':'donate'}, {}]);
                 console.log('sent donate');
             }
         } else {
