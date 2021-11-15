@@ -14,9 +14,9 @@ const ThankYouPage = () => {
 
     useEffect(() => {
 
-        if (window.gtag !== {}) {
+        if (window.dataLayer) {
             console.log('sending purchase')
-            window.gtag('event', 'purchase', {
+            window.datalayer.push(['event', 'purchase', {
             //"transaction_id": new Date().getTime(),
             "value": amount,
             "currency": "USD",
@@ -35,17 +35,17 @@ const ThankYouPage = () => {
             //     //   "price": '3.0'
             //     // }
              //]
-            });
+            }]);
             console.log('sent purchase')
             if (donate) {
                 console.log('sending donate');
-                window.gtag('event', 'donate', {});
+                window.dataLayer.push(['event', 'donate', {}]);
                 console.log('sent donate');
             }
         } else {
-            console.log('gtag not defined');
+            console.log('dataLayer not defined');
         }
-    }, [amount, window.gtag]);
+    }, [amount, window.dataLayer]);
 
     return (
         <div id="ffbh-content">
