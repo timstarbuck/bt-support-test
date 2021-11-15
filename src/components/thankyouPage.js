@@ -16,7 +16,7 @@ const ThankYouPage = () => {
 
         if (window.dataLayer) {
             console.log('sending purchase')
-            window.datalayer.push(['event', 'purchase', {
+            window.dataLayer.push(['event', 'purchase', {
             //"transaction_id": new Date().getTime(),
             "value": amount,
             "currency": "USD",
