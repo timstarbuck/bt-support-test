@@ -7,7 +7,7 @@ const DonationPage = () => {
 
     const handleDonate = () => {
         //https://support.boystown.org/site/Donation2?idb=532727795&df_id=2421&mfc_pref=T&2421.donation=completed&idb=532727795
-        history.push(`/Donation2?amount=${donationAmount}&donation=completed&donate=true&content_name=content_name_${new Date().getSeconds}&content_ids=content_id_${new Date().getMilliseconds()}`);
+        history.push(`/Donation2?amount=${donationAmount}&donation=completed&donate=true&content_name=content_name_${new Date().getSeconds()}&content_ids=content_id_${new Date().getMilliseconds()}`);
     }
 
     return (
