@@ -4,7 +4,7 @@ import queryString from 'query-string';
 
 const ThankYouPage = () => {
     const params = queryString.parse(useLocation().search);
-    const amount = params.amount ? params.amount : 1.01;
+    const amount = params.amount ? params.amount + '.00' : 1.01;
     const content_name = params.content_name ? params.content_name : 'default-content-name';
     const content_ids = params.content_ids ? params.content_ids : 'default-content-ids';
     const donate = params.donate ? true : false;
@@ -18,7 +18,7 @@ const ThankYouPage = () => {
             console.log('sending purchase')
             window.dataLayer.push({
                 'event':  'purchase',
-                "value": Number(amount),
+                "value": amount,
                 "currency": "USD",
                 "content_name" : content_name,
                 "content_ids" : content_ids
