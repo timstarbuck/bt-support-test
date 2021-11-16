@@ -4,34 +4,52 @@ import queryString from 'query-string';
 
 const ThankYouPage = () => {
     const params = queryString.parse(useLocation().search);
-    const amount = params.amount ? params.amount + '.00' : 1.01;
+    const amount = (params.amount ? Number(params.amount)  : 1.01).toFixed(2);
     const content_name = params.content_name ? params.content_name : 'default-content-name';
     const content_ids = params.content_ids ? params.content_ids : 'default-content-ids';
     const donate = params.donate ? true : false;
 
 
+    
     //var gtag = gtag || {};
 
     useEffect(() => {
+        if (typeof window.gtag !== 'function') {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        window.gtag = gtag;
+        console.log('defined gtag');
+        }
+  
+        // if (window.dataLayer) {
+        //     console.log('sending purchase')
+        //     console.log('amount', amount);
+        //     const purchaseEvent = {
+        //         'event':  'purchase',
+        //         "value": amount,
+        //         "currency": "USD",
+        //         "content_name" : content_name,
+        //         "content_ids" : content_ids
+        //     };
+        //     purchaseEvent.value = Number(amount).toFixed(2);
+        //     console.log('purchaseEvent', purchaseEvent);
+        //     window.dataLayer.push(purchaseEvent);
+        //     console.log('sent purchase')
 
-        if (window.dataLayer) {
             console.log('sending purchase')
-            window.dataLayer.push({
-                'event':  'purchase',
-                "value": amount,
-                "currency": "USD",
-                "content_name" : content_name,
-                "content_ids" : content_ids
+            window.gtag('event', 'purchase', {
+            "transaction_id": new Date().getTime(),
+            "value": amount,
+            "currency": "USD",
+            "content_name" : content_name,
+            "content_ids" : content_ids,
             });
-            console.log('sent purchase')
+            console.log('sent purchase')            
             if (donate) {
                 console.log('sending donate');
-                window.dataLayer.push({'event':'donate'});
+                window.gtag({'event':'donate'});
                 console.log('sent donate');
             }
-        } else {
-            console.log('dataLayer not defined');
-        }
     }, [amount, window.dataLayer]);
 
     return (
