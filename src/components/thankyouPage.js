@@ -38,7 +38,6 @@ const ThankYouPage = () => {
 
             console.log('sending purchase')
             window.gtag('event', 'purchase', {
-            "transaction_id": new Date().getTime(),
             "value": amount,
             "currency": "USD",
             "content_name" : content_name,
